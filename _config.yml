@@ -31,8 +31,8 @@ repository               : "dejin-wang/dejin-wang.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
+  name             : "Dejin Wang"
+  pronouns         : # example: "He/his"  
   bio              : "Short biography for the left-hand sidebar"
   location         : "Earth"
   employer         : "Red Brick University"
