@@ -1,20 +1,16 @@
 ---
-title: "Teaching experience 1"
+title: "Teaching Assistant – Undergraduate Physics Laboratory"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+permalink: /teaching/2023-physics-lab-ta
+venue: "Nankai University, School of Physics"
+date: 2023-01-01
+location: "Tianjin, China"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+As a Teaching Assistant for undergraduate physics laboratory courses, I provided instructional and academic support to enhance students’ understanding of experimental methods and data-driven reasoning.
 
-Heading 1
-======
+## Responsibilities
 
-Heading 2
-======
-
-Heading 3
-======
+- Assisted in teaching undergraduate physics laboratory courses, supporting instruction in experimental design, measurement techniques, and data analysis.
+- Held office hours, graded lab reports, assignments, and exams, and provided one-on-one academic guidance to help students strengthen conceptual understanding and improve experimental proficiency.
