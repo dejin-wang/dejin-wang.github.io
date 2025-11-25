@@ -10,6 +10,7 @@ Hi! I’m a second-year Ph.D. student in Interdiscipliny Engineering at Northeas
 
 My research focuses on developing machine-learning–driven methods for autonomous driving systems, with particular interests in driving-style modeling, risk-sensitive reinforcement learning, and sim-to-real generalization for complex dynamical systems. If you would like to learn more about my work or explore potential collaborations, please feel free to reach out at <a href="mailto:wang.dej@northeastern.edu">wang.dej@northeastern.edu</a>.
 
+[CV](/assets/dejin.pdf）
 
 🔥News
 ======
