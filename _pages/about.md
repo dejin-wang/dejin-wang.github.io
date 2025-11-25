@@ -31,16 +31,17 @@ My research focuses on developing **machine-learning–driven methods for autono
 6. **2025.11** — Presented the paper “RGDR: Reward-Guided Domain Randomization for Autonomous Driving” at the **CEE Research Expo** 📢  
 
 
+
 🏅 Honors and Awards
 ======
 
-- **Travel Award**, IEEE CASE Conference 2025, Los Angeles, USA, 2025
-- **Civil and Environmental Engineering Fellowship**, Northeastern University, 2024–2025  
-- **China National Scholarship (Top 2%)**, Nankai University, 2022–2023  
-- **First-class Graduate Student Scholarship**, Nankai University, 2022–2023  
-- **Graduate Recommended Examination Exemption Scholarship**, Nankai University, 2021  
-- **China National Scholarship (<1%)**, China University of Geosciences (Wuhan), 2019–2020  
-- **Outstanding Student Model (School-level)**, China University of Geosciences (Wuhan), 2018, 2019, 2020  
+- Travel Award, IEEE CASE Conference 2025, Los Angeles, USA, 2025  
+- Civil and Environmental Engineering Fellowship, Northeastern University, 2024–2025  
+- China National Scholarship (**Top 2%**), Nankai University, 2022–2023  
+- First-class Graduate Student Scholarship, Nankai University, 2022–2023  
+- Graduate Recommended Examination Exemption Scholarship, Nankai University, 2021  
+- China National Scholarship (**<1%**), China University of Geosciences (Wuhan), 2019–2020  
+- Outstanding Student Model (School-level), China University of Geosciences (Wuhan), 2018, 2019, 2020
 
 
 
