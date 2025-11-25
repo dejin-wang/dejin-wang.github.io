@@ -1,6 +1,5 @@
 ---
 permalink: /
-title: "Dejin Wang's homepage"
 author_profile: true
 redirect_from: 
   - /about/
