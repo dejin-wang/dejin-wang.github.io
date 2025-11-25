@@ -15,6 +15,8 @@ My research focuses on developing **machine-learning–driven methods for autono
 [CV](/assets/dejin.pdf)
 
 
+<div style="margin-left: 10px;">
+
 🔥 News
 ======
 
@@ -24,6 +26,10 @@ My research focuses on developing **machine-learning–driven methods for autono
 4. **2025.07** — One paper is accepted by the **IEEE ITSC** conference 🎉  
 5. **2025.08** — Attended the **IEEE CASE** conference and presented our paper “Robust Reinforcement Learning for Autonomous Driving in Uncertain Environments” 🎤  
 6. **2025.11** — Presented the paper “RGDR: Reward-Guided Domain Randomization for Autonomous Driving” at the **CEE Research Expo** 📢
+
+</div>
+
+
 
 
 🏅 Honors and Awards
