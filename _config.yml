@@ -10,7 +10,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Dejin Wang"
+title                    : "Homepage"
 title_separator          : "-"
 name                     : &name "Dejin Wang"
 description              : &description "Dejin Wang's academic portfolio"
