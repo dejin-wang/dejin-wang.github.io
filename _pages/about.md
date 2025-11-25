@@ -18,12 +18,13 @@ My research focuses on developing **machine-learning–driven methods for autono
 🔥 News
 ======
 
-1. **2024.12** — Presented the poster “Probabilistic Adaptation for Robust Decision-Making of Autonomous Vehicles in Non-Stationary Environments” at **CEE Industry Night** 📊  
-2. **2025.05** — One paper is accepted by the **IEEE CASE** conference 🎉  
-3. **2025.06** — Received a travel grant for attending the **IEEE CASE** conference ✈️🎓  
-4. **2025.07** — One paper is accepted by the **IEEE ITSC** conference 🎉  
-5. **2025.08** — Attended the **IEEE CASE** conference and presented our paper “Robust Reinforcement Learning for Autonomous Driving in Uncertain Environments” 🎤  
-6. **2025.11** — Presented the paper “RGDR: Reward-Guided Domain Randomization for Autonomous Driving” at the **CEE Research Expo** 📢  
+1. **2025.11** — Presented the paper “RGDR: Reward-Guided Domain Randomization for Autonomous Driving” at the **CEE Research Expo** 📢  
+2. **2025.08** — Attended the **IEEE CASE** conference and presented our paper “Robust Reinforcement Learning for Autonomous Driving in Uncertain Environments” 🎤  
+3. **2025.07** — One paper is accepted by the **IEEE ITSC** conference 🎉  
+4. **2025.06** — Received a travel grant for attending the **IEEE CASE** conference ✈️🎓  
+5. **2025.05** — One paper is accepted by the **IEEE CASE** conference 🎉  
+6. **2024.12** — Presented the poster “Probabilistic Adaptation for Robust Decision-Making of Autonomous Vehicles in Non-Stationary Environments” at **CEE Industry Night** 📊  
+
 
 
 
