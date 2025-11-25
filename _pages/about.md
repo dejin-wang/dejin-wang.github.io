@@ -8,12 +8,16 @@ redirect_from:
 ---
 
 Hi! I’m currently a second-year Ph.D. student in Civil and Environmental Engineering at Northeastern University, where I am fortunate to be advised by 
- [Prof. Fatemeh Ghoreishi](https://ghoreishi.lab.northeastern.edu/), I completed my undergraduate studies in Mechanical Engineering at the China University of Geosciences (Wuhan), where I worked with Prof. Min Li. I then obtained my master’s degree in Operations Research and Cybernetics from Nankai University, working under the supervision of [Prof. Zhongxin Liu](https://ai.nankai.edu.cn/info/1033/4287.htm). My research focuses on developing machine-learning–driven methods for autonomous driving and embodied intelligence, with particular interests in driving-style modeling, risk-sensitive reinforcement learning, and sim-to-real generalization for complex dynamical systems. I am also broadly interested in uncertainty-aware decision-making, domain randomization, and the integration of large embodied models into real-world robotic systems. If you would like to learn more about my work or explore potential collaborations, please feel free to reach out at [wang.dej@northeastern.edu].
+ [Prof. Fatemeh Ghoreishi](https://ghoreishi.lab.northeastern.edu/), I completed my undergraduate studies in Mechanical Engineering at the China University of Geosciences (Wuhan), where I worked with Prof. Min Li. I then obtained my master’s degree in Operations Research and Cybernetics from Nankai University, working under the supervision of [Prof. Zhongxin Liu](https://ai.nankai.edu.cn/info/1033/4287.htm). My research focuses on developing machine-learning–driven methods for autonomous driving systems, with particular interests in driving-style modeling, risk-sensitive reinforcement learning, and sim-to-real generalization for complex dynamical systems. If you would like to learn more about my work or explore potential collaborations, please feel free to reach out at <a href="mailto:wang.dej@northeastern.edu">wang.dej@northeastern.edu</a>.
 
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+
+
+
+
+
+
 
 A data-driven personal website
 ======
