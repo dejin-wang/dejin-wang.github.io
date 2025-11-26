@@ -1,5 +1,5 @@
 ---
-title: "Portfolio Item: Reward-Guided Domain Randomization (RGDR)"
+title: "Reward-Guided Domain Randomization (RGDR)"
 excerpt: "A project proposing an adaptive domain-randomization framework that improves robustness and generalization of autonomous-driving RL policies through reward-guided sampling.<br/><img src='/images/RGDR.png'>"
 collection: portfolio
 ---
