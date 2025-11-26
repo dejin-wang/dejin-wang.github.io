@@ -11,10 +11,10 @@ I am a **dragon boat paddler**. Dragon boat paddling has become an important par
 I have been paddling for one year, previously training and competing with the **Nankaitianda Nantianmen Dragon Boat Team** and the **Boston Storm Dragon Boat Team**. I have already participated in several dragon boat races, each offering unforgettable experiences and challenges.
 
 <p align="center">
-  <img src="/images/dragonboat_1.jpg" width="180" style="margin:8px;"/>
-  <img src="/images/dragonboat_2.jpg" width="180" style="margin:8px;"/>
-  <img src="/images/dragonboat_3.jpg" width="180" style="margin:8px;"/>
-  <img src="/images/dragonboat_4.jpg" width="180" style="margin:8px;"/>
+  <img src="/images/dragonboat_1.jpg" width="300" style="margin:8px;"/>
+  <img src="/images/dragonboat_2.jpg" width="300" style="margin:8px;"/>
+  <img src="/images/dragonboat_3.jpg" width="300" style="margin:8px;"/>
+  <img src="/images/dragonboat_4.jpg" width="300" style="margin:8px;"/>
 </p>
 
 Dragon boat paddling gives me a unique balance of physical power and collective synchronization. It keeps me disciplined, helps me clear my mind after long research hours, and strengthens both my body and determination.
