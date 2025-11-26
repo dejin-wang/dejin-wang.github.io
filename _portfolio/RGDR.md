@@ -1,6 +1,6 @@
 ---
 title: "Reward-Guided Domain Randomization (RGDR)"
-excerpt: "A project proposing an adaptive domain-randomization framework that improves robustness and generalization of autonomous-driving RL policies through reward-guided sampling.<br/><img src='/images/RGDR.png' style='width:300px;'><br/><a class='btn btn--primary' href='https://github.com/dejin-wang/reward_guided_domain_randomization' target='_blank'>View Code on GitHub</a>"
+excerpt: "A project proposing an adaptive domain-randomization framework that improves robustness and generalization of autonomous-driving RL policies through reward-guided sampling.<br/><img src='/images/RGDR.png' style='width:100px;'><br/><a class='btn btn--primary' href='https://github.com/dejin-wang/reward_guided_domain_randomization' target='_blank'>View Code on GitHub</a>"
 collection: portfolio
 ---
 
