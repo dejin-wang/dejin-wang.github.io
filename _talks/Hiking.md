@@ -4,7 +4,7 @@ collection: talks
 permalink: /talks/hiking
 location: "Everywhere with a trail"
 order: 3
-excerpt: "<p>I love <b>hiking</b>. Outside my academic and research life, hiking has become one of the most refreshing and grounding parts of my routine. I explore mountain trails, lakeside routes, and forest paths whenever I can. Below are some of the moments from my hikes:</p><p align='center'><img src='/images/hiking_1.jpg' width='450' style='margin:4px;'/><img src='/images/hiking_2.jpg' width='450' style='margin:4px;'/><img src='/images/hiking_3.jpg' width='450' style='margin:4px;'/><img src='/images/hiking_4.jpg' width='450' style='margin:4px;'/></p>"
+excerpt: "<p>I love <b>hiking</b>.  Hiking has become one of the most refreshing and grounding parts of my routine in autumn, when I explore mountain trails, lakeside routes, and forest paths to enjoy the vibrant foliage across New England. Below are some of the moments from my hikes:</p><p align='center'><img src='/images/hiking_1.jpg' width='220' style='margin:4px;'/><img src='/images/hiking_2.jpg' width='220' style='margin:4px;'/><img src='/images/hiking_3.jpg' width='220' style='margin:4px;'/><img src='/images/hiking_4.jpg' width='220' style='margin:4px;'/></p>"
 ---
 
 I love **hiking**. Outside my academic and research life, hiking has become one of the most refreshing and grounding parts of my routine. Whether it is a quiet forest trail or a steep mountain climb, spending time in nature always brings me clarity and calmness.
