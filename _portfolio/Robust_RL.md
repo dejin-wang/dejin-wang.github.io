@@ -1,6 +1,6 @@
 ---
 title: "Robust Reinforcement Learning for Autonomous Driving in Uncertain Environments"
-excerpt: "A history-dependent reinforcement-learning framework that improves policy adaptability and robustness in dynamic, partially observable driving environments using randomized dynamics, context-aware rewards, and LSTM-based policy optimization.<br/><img src='/images/RobustRL.png' style='width:300px; max-height:180px; object-fit:contain;'><br/>"
+excerpt: "A history-dependent reinforcement-learning framework that improves policy adaptability and robustness in dynamic, partially observable driving environments using randomized dynamics, context-aware rewards, and LSTM-based policy optimization.<br/><img src='/images/Robust_1.png' style='width:300px; max-height:180px; object-fit:contain;'><br/>"
 collection: portfolio
 ---
 
