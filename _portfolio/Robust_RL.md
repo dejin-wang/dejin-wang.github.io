@@ -5,7 +5,6 @@ excerpt: "A history-dependent reinforcement-learning framework that improves pol
 collection: portfolio
 ---
 
-
 ## Project Overview
 This project presents a **history-dependent reinforcement learning framework** designed to improve the robustness and adaptability of autonomous driving policies operating in dynamic and uncertain environments. Conventional RL methods assume fixed transition dynamics, static reward structures, and Markovian state representations, making them prone to overfitting and brittle behavior under real-world disturbances such as varying road friction, weather conditions, and unpredictable traffic interactions.  
 To address these limitations, the proposed framework integrates **randomized training dynamics**, **context-aware reward functions**, and **LSTM-based PPO policies** that learn from historical interactions. This enables the agent to infer latent environmental variations implicitly and adjust its driving strategy in real time without requiring explicit access to environment parameters.
