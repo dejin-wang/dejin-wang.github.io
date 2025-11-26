@@ -12,10 +12,10 @@ I am a **badminton holic**. Outside my academic and research life, badminton has
 I have been playing badminton for three years, and I also participate in badminton competitions. These are some of the medals I have earned:
 
 <p align="center">
-  <img src="/images/badminton_medal1.jpg" width="180" style="margin:8px;"/>
-  <img src="/images/badminton_medal21.jpg" width="180" style="margin:8px;"/>
-  <img src="/images/badminton_medal3.jpg" width="180" style="margin:8px;"/>
-  <img src="/images/badminton_medal4.jpg" width="180" style="margin:8px;"/>
+  <img src="/images/badminton_medal1.jpg" width="300" style="margin:8px;"/>
+  <img src="/images/badminton_medal21.jpg" width="300" style="margin:8px;"/>
+  <img src="/images/badminton_medal3.jpg" width="300" style="margin:8px;"/>
+  <img src="/images/badminton_medal4.jpg" width="300" style="margin:8px;"/>
 </p>
 
 The sport gives me a unique balance of speed, strategy, and focus. It keeps me active, clears my mind after long coding or research sessions, and brings a sense of rhythm and competitiveness into my daily life.
