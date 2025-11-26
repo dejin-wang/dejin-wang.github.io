@@ -3,7 +3,6 @@ title: "Hiking"
 collection: talks
 permalink: /talks/hiking
 location: "Everywhere with a trail"
-date: 2025-01-01
 order: 3
 excerpt: "<p>I love <b>hiking</b>.  Hiking has become one of the most refreshing and grounding parts of my routine in autumn, when I explore mountain trails, lakeside routes, and forest paths to enjoy the vibrant foliage across New England. Below are some of the moments from my hikes:</p><p align='center'><img src='/images/hiking_1.jpg' width='220' style='margin:4px;'/><img src='/images/hiking_2.jpg' width='220' style='margin:4px;'/><img src='/images/hiking_3.jpg' width='220' style='margin:4px;'/><img src='/images/hiking_4.jpg' width='220' style='margin:4px;'/></p>"
 ---
