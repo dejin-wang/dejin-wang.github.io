@@ -1,39 +1,32 @@
-
 ---
-title: "Robust Reinforcement Learning for Autonomous Driving in Uncertain Environments"
-excerpt: "A history-dependent reinforcement-learning framework that improves policy adaptability and robustness in dynamic, partially observable driving environments using randomized dynamics, context-aware rewards, and LSTM-based policy optimization.<br/><img src='/images/Robust_1.png' style='width:200px;'>"
+title: "Reward-Guided Domain Randomization (RGDR)"
+excerpt: "A project proposing an adaptive domain-randomization framework that improves robustness and generalization of autonomous-driving RL policies through reward-guided sampling.<br/><img src='/images/RGDR.png' style='width:200px;'><br/><a class='btn btn--primary' href='https://github.com/dejin-wang/reward_guided_domain_randomization' target='_blank'>View Code on GitHub</a>"
 collection: portfolio
 ---
 
+
 ## Project Overview
-This project presents a **history-dependent reinforcement learning framework** designed to improve the robustness and adaptability of autonomous driving policies operating in dynamic and uncertain environments. Conventional RL methods assume fixed transition dynamics, static reward structures, and Markovian state representations, making them prone to overfitting and brittle behavior under real-world disturbances such as varying road friction, weather conditions, and unpredictable traffic interactions.  
-To address these limitations, the proposed framework integrates **randomized training dynamics**, **context-aware reward functions**, and **LSTM-based PPO policies** that learn from historical interactions. This enables the agent to infer latent environmental variations implicitly and adjust its driving strategy in real time without requiring explicit access to environment parameters.
+This project introduces **Reward-Guided Domain Randomization (RGDR)**, a scalable and principled framework designed to improve the robustness and zero-shot generalization of reinforcement-learning policies for autonomous driving. Unlike traditional domain randomization that samples parameters uniformly, RGDR adaptively prioritizes challenging environments using real-time reward feedback, enabling policies to focus on scenarios where they currently underperform.
 
 ## Key Contributions
-- **Randomized Training Dynamics:** Introduces structured variations in environmental parameters (e.g., friction, weather) during training, improving robustness to a wide range of driving conditions.
-- **Context-Aware Reward Functions:** Dynamically adjusts the importance of safety, efficiency, and comfort objectives based on sampled environment conditions, enabling scenario-specific behavior.
-- **LSTM-Based PPO Policy:** Utilizes an LSTM-augmented policy to capture temporal dependencies and infer hidden environmental factors from history, enabling adaptive behavior in non-stationary settings.
-- **Fine-Tuning–Free Deployment:** Achieves environment-aware adaptation without requiring online task identification or real-time parameter estimation.
+- **Reward-Based Training Metric:** Introduced mean reward per step as a stable and algorithm-agnostic indicator of environment difficulty, applicable to both value-based and policy-gradient RL methods.
+- **Adaptive Sampling Strategy:** Developed a reward-guided weighted KDE method that assigns higher sampling probability to low-reward environments, emphasizing difficult regions of the domain space.
+- **Efficient Exploration–Exploitation Balance:** Designed a dynamic sampling mechanism that transitions from broad exploration to targeted exploitation without additional network components.
+- **High Computational Efficiency:** Achieves linear or sublinear complexity per iteration, significantly lower than Active Domain Randomization (ADR), while maintaining similar or superior robustness.
 
 ## Technical Highlights
-- History-dependent formulation with LSTM to overcome partial observability  
-- Environment-parameterized transitions and adaptive reward scaling  
-- PPO optimization with stable surrogate objectives and entropy regularization  
-- Evaluation across rainy, normal, high-friction, and randomized conditions in CARLA  
-- Comparative analysis against domain-randomization and fixed-environment baselines  
+- Weighted Kernel Density Estimation (KDE) for difficulty-aware environment sampling  
+- Linear-complexity sampling pipeline with constant-time perturbation and buffer updates  
+- Integration with PPO for large-scale autonomous-driving tasks  
+- Extensive evaluations in both OpenAI Gym (Pendulum-v1) and CARLA (Adaptive Cruise Control)
 
 ## Experimental Results
-- **Convergence Analysis:** The LSTM-based PPO agent shows stable convergence, with decreasing total loss and rising accumulated reward across training.
-- **Generalization Across Environments:**  
-  - Achieves near–state-of-the-art performance across rainy, normal, and high-friction conditions.  
-  - Consistently ranks second-best or best in every fixed environment despite not being trained specifically for any single one.  
-  - Outperforms all baselines in randomized environments.
-- **Adaptive Driving Behavior:**  
-  - Maintains higher safety margins in low-friction conditions.  
-  - Optimizes efficiency in high-friction environments.  
-  - Produces smooth control actions across diverse settings.
-- **Distribution Sensitivity:** Policies trained under uniform distributions generalize better to extreme conditions, while LSTM-based models outperform MLP-based policies due to stronger temporal reasoning.
+- **OpenAI Gym:** RGDR emphasizes harder gravity intervals, improving robustness without excessive sampling. It outperforms uniform DR in difficult scenarios and achieves performance comparable to ADR with far lower computation cost.
+- **CARLA Autonomous Driving:**  
+  - Demonstrated strong generalization across randomized road friction and vehicle mass settings.  
+  - Achieved higher rewards in challenging and out-of-distribution conditions relative to UDR and ADR.  
+  - Validated that adaptive sampling leads to more balanced and effective policy training.
 
 ## Outcome
-This project demonstrates a unified, memory-aware RL framework capable of **inferring latent environmental variations**, **adapting driving priorities dynamically**, and **maintaining robust performance across diverse and uncertain conditions**. The integration of randomized dynamics, context-aware rewards, and LSTM-based PPO yields significant improvements over domain randomization and environment-specific training.  
-The method supports real-time, fine-tuning–free deployment and contributes to ongoing research on robust decision-making and adaptive control in autonomous driving.
+RGDR provides a general, scalable, and computationally efficient solution for training robust autonomous-driving RL policies. The method outperforms or matches state-of-the-art baselines while reducing computational overhead, making it suitable for high-dimensional, safety-critical driving tasks such as those simulated in CARLA.  
+This project forms the basis of ongoing work on robustness, sim-to-real transfer, and domain adaptation in autonomous driving.
