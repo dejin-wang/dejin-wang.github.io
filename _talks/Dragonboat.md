@@ -1,9 +1,7 @@
 ---
 title: "Dragon Boat Left Paddler"
 collection: talks
-type: "Talk"
 permalink: /talks/dragon-boat
-venue: "Personal Life"
 location: "Rivers, lakes, and every dragon boat race I can join"
 ---
 
