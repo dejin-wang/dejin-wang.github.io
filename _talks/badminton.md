@@ -3,14 +3,8 @@ title: "Badminton Holic"
 collection: talks
 permalink: /talks/badminton-holic
 location: "Everywhere with a badminton court"
-excerpt: |
-  I am a **badminton holic**. Outside my academic and research life, badminton has become one of the most important parts of my routine. I regularly play singles and doubles.
-  <p align='center'>
-    <img src='/images/badminton_medal1.jpg' width='120' style='margin:4px;'/>
-    <img src='/images/badminton_medal21.jpg' width='120' style='margin:4px;'/>
-    <img src='/images/badminton_medal3.jpg' width='120' style='margin:4px;'/>
-    <img src='/images/badminton_medal4.jpg' width='120' style='margin:4px;'/>
-  </p>
+excerpt: "<p>I am a <b>badminton holic</b>. Outside my academic and research life, badminton has become one of the most important parts of my routine. I regularly play singles and doubles.</p><p align='center'><img src='/images/badminton_medal1.jpg' width='120' style='margin:4px;'/><img src='/images/badminton_medal21.jpg' width='120' style='margin:4px;'/><img src='/images/badminton_medal3.jpg' width='120' style='margin:4px;'/><img src='/images/badminton_medal4.jpg' width='120' style='margin:4px;'/></p>"
+
 ---
 
 I am a **badminton holic**. Outside my academic and research life, badminton has become one of the most important parts of my routine. I regularly play singles and doubles.
