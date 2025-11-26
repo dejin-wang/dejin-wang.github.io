@@ -1,5 +1,5 @@
 ---
-title: "Dragon Boat Enthusiast"
+title: "Dragon Boat Left Paddler"
 collection: talks
 type: "Talk"
 permalink: /talks/dragon-boat
