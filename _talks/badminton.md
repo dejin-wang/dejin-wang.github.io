@@ -1,9 +1,7 @@
 ---
 title: "Badminton Holic"
 collection: talks
-type: "Talk"
 permalink: /talks/badminton-holic
-venue: "Personal Life"
 location: "Everywhere with a badminton court"
 ---
 I am a genuine **badminton holic**. Outside my academic and research life, badminton has become one of the most important parts of my routine. I regularly play singles and doubles.
