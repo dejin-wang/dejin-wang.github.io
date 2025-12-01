@@ -4,7 +4,7 @@ collection: talks
 permalink: /talks/dragon-boat
 location: "Rivers, lakes, and every dragon boat race I can join"
 order: 2
-excerpt: "<p>I am a <b>dragon boat paddler</b>.  Dragon boat paddling has become a sport that challenges both physical endurance and team coordination. I train regularly with my teammates and participate in dragon boat races. Here are some memorable moments from my journey: </p><p align='center'><img src='/images/dragonboat_1.jpg' width='220' style='margin:4px;'/><img src='/images/dragonboat_2.jpg' width='220' style='margin:4px;'/><img src='/images/dragonboat_3.jpg' width='220' style='margin:4px;'/><img src='/images/dragonboat_4.jpg' width='220' style='margin:4px;'/></p>"
+excerpt: "<p>I am a <b>dragon boat paddler</b>.  Dragon boat paddling has become a sport that challenges both physical endurance and team coordination. I paddle for Boston Storm Dragon Boat Club as well as Nankaitianda Dragon boat team(南开天大南天门龙舟队).I train regularly with my teammates and participate in dragon boat races. Here are some memorable moments from my journey: </p><p align='center'><img src='/images/dragonboat_1.jpg' width='220' style='margin:4px;'/><img src='/images/dragonboat_2.jpg' width='220' style='margin:4px;'/><img src='/images/dragonboat_3.jpg' width='220' style='margin:4px;'/><img src='/images/dragonboat_4.jpg' width='220' style='margin:4px;'/></p>"
 ---
 
 I am a **dragon boat paddler**. Dragon boat paddling has become an important part of my athletic routine. It combines strength, endurance, teamwork, and rhythm in a way that no other sport does.
