@@ -1,0 +1,33 @@
+
+
+main:
+
+  - title: "Projects"
+    url: /portfolio/
+
+    
+  - title: "Publications"
+    url: /publications/
+
+
+  - title: "Teaching"
+    url: /teaching/
+    
+  - title: "Life Outside Work"
+    url: /talks/
+
+ 
+    
+
+  # - title: "Blog Posts"
+  #   url: /year-archive/
+
+    
+  # - title: "CV"
+  #   url: /cv/
+    
+  # - title: "CV"
+  #   url: /cv-json/
+    
+  # - title: "Guide"
+  #   url: /markdown/
