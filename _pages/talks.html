@@ -1,0 +1,17 @@
+---
+layout: archive
+title: "Life Outside Work (那些花儿)"
+permalink: /talks/
+author_profile: true
+---
+
+{% if site.talkmap_link == true %}
+
+<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+
+{% endif %}
+
+{% assign sorted_talks = site.talks | sort: "order" %}
+{% for post in sorted_talks %}
+  {% include archive-single-talk.html %}
+{% endfor %}
