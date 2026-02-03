@@ -9,7 +9,7 @@ location: "Boston, MA, USA"
 ---
 
 
-As a Teaching Assistant for Probability and Engineering Economy for Civil Engineering courses, I provided instructional and academic support to enhance students’ understanding of experimental methods and data-driven reasoning.
+As a Teaching Assistant for Probability and Engineering Economy courses in Civil Engineering, I provided instructional and academic support to enhance students’ understanding of Probability Theory.
 
 ## Responsibilities
 
