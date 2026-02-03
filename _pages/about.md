@@ -14,6 +14,9 @@ My research focuses on developing **machine-learning–driven methods for autono
 
 [CV](/assets/dejin.pdf)
 
+For publications, please refer to my [Google Scholar](https://scholar.google.com/citations?hl=en&user=2vMnqO4AAAAJ).
+
+
 
 🔥 News
 ======
