@@ -7,7 +7,7 @@ redirect_from:
 ---
 
 
-Hi! I’m a **second-year Ph.D. student in Interdisciplinary Engineering** at **[Northeastern University](https://www.northeastern.edu/)**, advised by **[Prof. Fatemeh Ghoreishi](https://ghoreishi.lab.northeastern.edu/)**. I completed my **B.Eng. in Mechanical Engineering** at the **[China University of Geosciences (Wuhan)](https://en.cug.edu.cn/)** and my **M.S. in Operations Research and Cybernetics** at **[Nankai University](https://en.nankai.edu.cn/)**, where I worked with **[Prof. Zhongxin Liu](https://ai.nankai.edu.cn/info/1033/4287.htm)**.
+Hi! I’m a **second-year Ph.D. candidate in Interdisciplinary Engineering** at **[Northeastern University](https://www.northeastern.edu/)**, advised by **[Prof. Fatemeh Ghoreishi](https://ghoreishi.lab.northeastern.edu/)**. I completed my **B.Eng. in Mechanical Engineering** at the **[China University of Geosciences (Wuhan)](https://en.cug.edu.cn/)** and my **M.S. in Operations Research and Cybernetics** at **[Nankai University](https://en.nankai.edu.cn/)**, where I worked with **[Prof. Zhongxin Liu](https://ai.nankai.edu.cn/info/1033/4287.htm)**.
 
 
 My research focuses on developing **machine-learning–driven methods for autonomous driving systems**, with particular interests in **driving-style modeling, risk-sensitive reinforcement learning, and sim-to-real generalization for complex dynamical systems**. If you would like to learn more about my work or explore potential collaborations, please feel free to reach out at **<a href="mailto:wang.dej@northeastern.edu">wang.dej@northeastern.edu</a>**.
