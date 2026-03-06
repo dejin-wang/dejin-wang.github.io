@@ -20,8 +20,9 @@ For publications, please refer to my [Google Scholar](https://scholar.google.com
 
 🔥 News
 ======
-1. **2026.02** —I have passed my Ph.D Qualification Exam! many thanks to my committee member [Fatemeh Ghoreishi](https://ghoreishi.lab.northeastern.edu/), [Chris Amato](https://www.khoury.northeastern.edu/people/chris-amato/), [Dennedy-Frank](https://coe.northeastern.edu/people/dennedy-frank-james/), for their valuable and constructive feedback.
-1. **2026.01** — One paper is accepted by the**IEEE ICRA** conference🎉
+1.**2026.03** — Received a travel grant for attending the **IEEE ACC** conference ✈️🎓  
+1. **2026.02** —I have passed my Ph.D Qualification Exam! Many thanks to my committee member [Fatemeh Ghoreishi](https://ghoreishi.lab.northeastern.edu/), [Chris Amato](https://www.khoury.northeastern.edu/people/chris-amato/), [Dennedy-Frank](https://coe.northeastern.edu/people/dennedy-frank-james/), for their valuable and constructive feedback.
+1. **2026.01** — One paper is accepted by the **IEEE ICRA** conference🎉
 2. **2026.01** — One paper is accepted by the **IEEE ACC** conference 🎉
 3. **2025.11** — Presented the paper “RGDR: Reward-Guided Domain Randomization for Autonomous Driving” at the **CEE Research Expo** 📢  
 4. **2025.08** — Attended the **IEEE CASE** conference and presented our paper “Robust Reinforcement Learning for Autonomous Driving in Uncertain Environments” 🎤  
