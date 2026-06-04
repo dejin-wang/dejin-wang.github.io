@@ -20,19 +20,19 @@ For publications, please refer to my [Google Scholar](https://scholar.google.com
 
 🔥 News
 ======
-
-1. **2026.05** — One paper is accepted by the **IEEE ITSC 2026** conference 🎉
-2. **2026.03** — Presented the poster “RGDR: Reward-Guided Domain Randomization for Autonomous Driving” at **CEE Industry Leadership Night** 📊  
-3. **2026.03** — Received the Travel Grant for attending the **IEEE ACC 2026** conference ✈️🎓  
-4. **2026.02** —I have passed my Ph.D Qualification Exam! Many thanks to my committee member [Fatemeh Ghoreishi](https://ghoreishi.lab.northeastern.edu/), [Chris Amato](https://www.khoury.northeastern.edu/people/chris-amato/), [Dennedy-Frank](https://coe.northeastern.edu/people/dennedy-frank-james/), for their valuable and constructive feedback.
-5. **2026.01** — One paper is accepted by the **IEEE ICRA 2026** conference🎉
-6. **2026.01** — One paper is accepted by the **IEEE ACC 2026** conference (Oral Presentation) 🎉
-7. **2025.11** — Presented the paper “RGDR: Reward-Guided Domain Randomization for Autonomous Driving” at the **CEE Research Expo** 📢  
-8. **2025.08** — Attended the **IEEE CASE 2025** conference and presented our paper “Robust Reinforcement Learning for Autonomous Driving in Uncertain Environments” 🎤  
-9. **2025.07** — One paper is accepted by the **IEEE ITSC 2025** conference 🎉  
-10. **2025.06** — Received the Travel Grant for attending the **IEEE CASE 2025** conference ✈️🎓  
-11. **2025.05** — One paper is accepted by the **IEEE CASE 2025** conference 🎉  
-12. **2024.12** — Presented the poster “Probabilistic Adaptation for Robust Decision-Making of Autonomous Vehicles in Non-Stationary Environments” at **CEE Industry Night** 📊  
+1. **2026.06** — One paper is accepted by the **International Journal of Intelligent Transportation Systems Research** 🎉 My first journal paper. So excited that I could cry.
+2. **2026.05** — One paper is accepted by the **IEEE ITSC 2026** conference 🎉
+3. **2026.03** — Presented the poster “RGDR: Reward-Guided Domain Randomization for Autonomous Driving” at **CEE Industry Leadership Night** 📊  
+4. **2026.03** — Received the Travel Grant for attending the **IEEE ACC 2026** conference ✈️🎓  
+5. **2026.02** —I have passed my Ph.D Qualification Exam! Many thanks to my committee member [Fatemeh Ghoreishi](https://ghoreishi.lab.northeastern.edu/), [Chris Amato](https://www.khoury.northeastern.edu/people/chris-amato/), [Dennedy-Frank](https://coe.northeastern.edu/people/dennedy-frank-james/), for their valuable and constructive feedback.
+6. **2026.01** — One paper is accepted by the **IEEE ICRA 2026** conference🎉
+7. **2026.01** — One paper is accepted by the **IEEE ACC 2026** conference (Oral Presentation) 🎉
+8. **2025.11** — Presented the paper “RGDR: Reward-Guided Domain Randomization for Autonomous Driving” at the **CEE Research Expo** 📢  
+9. **2025.08** — Attended the **IEEE CASE 2025** conference and presented our paper “Robust Reinforcement Learning for Autonomous Driving in Uncertain Environments” 🎤  
+10. **2025.07** — One paper is accepted by the **IEEE ITSC 2025** conference 🎉  
+11. **2025.06** — Received the Travel Grant for attending the **IEEE CASE 2025** conference ✈️🎓  
+12. **2025.05** — One paper is accepted by the **IEEE CASE 2025** conference 🎉  
+13. **2024.12** — Presented the poster “Probabilistic Adaptation for Robust Decision-Making of Autonomous Vehicles in Non-Stationary Environments” at **CEE Industry Night** 📊  
 
 
 
@@ -40,6 +40,7 @@ For publications, please refer to my [Google Scholar](https://scholar.google.com
 🏅 Honors and Awards
 ======
 
+- Travel Award, IEEE ACC Conference 2026, New Orleans, USA, 2026  
 - Travel Award, IEEE CASE Conference 2025, Los Angeles, USA, 2025  
 - Civil and Environmental Engineering Fellowship, Northeastern University, 2024–2025  
 - China National Scholarship (**Top 2%**), Nankai University, 2022–2023  
