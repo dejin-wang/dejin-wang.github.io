@@ -22,7 +22,7 @@ For publications, please refer to my [Google Scholar](https://scholar.google.com
 ======
 
 1. **2026.06** — One paper is accepted by the **IEEE ITSC 2026** conference 🎉
-2. **2026.06** — Proud to share that our Nantianmen Dragon Boat Team won the bronze medal in the Division C Major category at the Boston race. As the captain, I could not be prouder of our team.
+2. **2026.06** — Proud to share that our Nantianmen Dragon Boat Team won the bronze medal in the Division C Major category at the Boston race. As the captain, I could not be prouder of our team. GOGOGO! Nantianmen!
 4. **2026.06** — One paper is accepted by the **International Journal of Intelligent Transportation Systems Research** 🎉 My first journal paper. So excited that I could cry.
 5. **2026.05** — One paper is accepted by the **IEEE ITSC 2026** conference 🎉
 6. **2026.03** — Presented the poster “RGDR: Reward-Guided Domain Randomization for Autonomous Driving” at **CEE Industry Leadership Night** 📊  
