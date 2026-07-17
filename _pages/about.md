@@ -43,7 +43,8 @@ For publications, please refer to my [Google Scholar](https://scholar.google.com
 🏅 Honors and Awards
 ======
 
-- Travel Award, IEEE ACC Conference 2026, New Orleans, USA, 2026  
+- IEEE RAS Travel Support Award, IEEE/RSJ IROS, Pittsburgh, PA, USA, 2026
+- Travel Award, IEEE ACC Conference 2026, New Orleans, USA, 2026
 - Travel Award, IEEE CASE Conference 2025, Los Angeles, USA, 2025  
 - Civil and Environmental Engineering Fellowship, Northeastern University, 2024–2025  
 - China National Scholarship (**Top 2%**), Nankai University, 2022–2023  
