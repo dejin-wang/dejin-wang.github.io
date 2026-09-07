@@ -6,7 +6,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello, I am Dejin. You may call me Saul, or simply DJ.  I’m a **Third-year Ph.D. candidate in Interdisciplinary Engineering** at **[Northeastern University](https://www.northeastern.edu/)**, advised by **[Prof. Fatemeh Ghoreishi](https://ghoreishi.lab.northeastern.edu/)**. I completed my **B.Eng. in Mechanical Engineering** at the **[China University of Geosciences (Wuhan)](https://en.cug.edu.cn/)** and my **M.S. in Operations Research and Cybernetics** at **[Nankai University](https://en.nankai.edu.cn/)**, where I worked with **[Prof. Zhongxin Liu](https://ai.nankai.edu.cn/info/1033/4287.htm)**. 
+Hi, I am Dejin. You may call me Saul, or simply DJ.  I’m a **Third-year Ph.D. candidate in Interdisciplinary Engineering** at **[Northeastern University](https://www.northeastern.edu/)**, advised by **[Prof. Fatemeh Ghoreishi](https://ghoreishi.lab.northeastern.edu/)**. I completed my **B.Eng. in Mechanical Engineering** at the **[China University of Geosciences (Wuhan)](https://en.cug.edu.cn/)** and my **M.S. in Operations Research and Cybernetics** at **[Nankai University](https://en.nankai.edu.cn/)**, where I worked with **[Prof. Zhongxin Liu](https://ai.nankai.edu.cn/info/1033/4287.htm)**. 
 
 
 My research focuses on developing **machine-learning–driven methods for autonomous driving systems**, with particular interests in **driving-style modeling, risk-sensitive reinforcement learning, and sim-to-real generalization for complex dynamical systems**. If you would like to learn more about my work or explore potential collaborations, please feel free to reach out at **<a href="mailto:wang.dej@northeastern.edu">wang.dej@northeastern.edu</a>**. 
@@ -20,8 +20,9 @@ For publications, please refer to my [Google Scholar](https://scholar.google.com
 🔥 News
 ======
 
-1. **2026.06** — One paper is accepted by the **IEEE IROS 2026** conference 🎉！
-2. **2026.06** — Proud to share that our Nantianmen Dragon Boat Team won the bronze medal in the Division C Major category at the Boston race. As the captain, I could not be prouder of our team. GOGOGO! Nantianmen 🥉🥉🥉!
+1. **2026.06** — Received the Travel Grant for attending the **IEEE IROS 2026** conference 🎓, see you in Pittsburgh!✈️
+2. **2026.06** — One paper is accepted by the **IEEE IROS 2026** conference 🎉！
+3. **2026.06** — Proud to share that our Nantianmen Dragon Boat Team won the bronze medal in the Division C Major category at the Boston race. As the captain, I could not be prouder of our team. GOGOGO! Nantianmen 🥉🥉🥉!
 4. **2026.06** — One paper is accepted by the **International Journal of Intelligent Transportation Systems Research** 🎉 My first journal paper. So excited that I could cry.
 5. **2026.05** — One paper is accepted by the **IEEE ITSC 2026** conference 🎉！
 6. **2026.03** — Presented the poster “RGDR: Reward-Guided Domain Randomization for Autonomous Driving” at **CEE Industry Leadership Night** 📊  .
