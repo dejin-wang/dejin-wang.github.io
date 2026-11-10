@@ -342,6 +342,8 @@
     .page { padding-top: 32px; }
     .top-row, .news-row, .pair-row { grid-template-columns: minmax(0, 1fr); }
     .pair-row > section + section { margin-top: 44px; }
+    .pair-row > #honors, .news-row > #news { display: block; }
+    .pair-row > #honors .honors, .news-row > #news .news-scroll { flex: none; min-height: auto; }
     .pair-row > #honors { contain: none; min-height: 0; }
     .pair-row > #honors .honors { overflow: visible; -webkit-mask-image: none; mask-image: none; }
     .scroll-hint { display: none; }
@@ -380,7 +382,11 @@
     .news time { grid-area: time; text-align: left; padding-top: 0; }
     .news .txt { grid-area: txt; padding-top: 0; }
     .more { margin-left: 48px; }
-    .pubs { grid-template-columns: 1fr; gap: 16px; }
+    .pubs { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; margin: 12px -16px 0; padding: 2px 16px 12px; scrollbar-width: none; }
+    .pubs::-webkit-scrollbar { display: none; }
+    .pubs .pub { flex: 0 0 86%; scroll-snap-align: center; }
+    .pubs .pub:hover { transform: none; }
+    .year::after { content: "Swipe for more →"; flex: none; height: auto; background: none; font: 500 .74rem/1 Inter, system-ui, sans-serif; color: var(--faint); margin-left: auto; }
     .pubs .pub { grid-template-columns: minmax(0, 1fr); grid-template-areas: "thumb" "title" "authors" "venue" "points" "foot"; grid-template-rows: none; padding: 14px 16px; }
     .pubs .pub > .thumb { margin-bottom: 12px; }
     .edu li { grid-template-columns: 1fr; gap: 2px; }
