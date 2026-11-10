@@ -230,16 +230,17 @@
   .year { display: flex; align-items: center; gap: 14px; font-family: "Source Serif 4", Georgia, serif; font-size: 1.15rem; font-weight: 700; color: var(--head); margin: 36px 0 4px; }
   .year::after { content: ""; flex: 1; height: 1px; background: var(--line); }
   .sec-head + .year { margin-top: 0; }
-  .pubs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; margin-top: 16px; }
-  .pubs .pub { display: grid; grid-template-columns: 176px minmax(0, 1fr); grid-template-rows: auto auto auto 1fr auto; grid-template-areas: "thumb title" "thumb authors" "thumb venue" "points points" "foot foot"; column-gap: 18px; padding: 18px 20px; border: 1px solid var(--line); border-radius: 14px; background: var(--card); box-shadow: var(--shadow); transition: transform .25s, box-shadow .25s, border-color .25s; }
+  .pubs { display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; margin-top: 16px; }
+  .pubs .pub { display: grid; grid-template-columns: 220px max-content minmax(0, 1fr); grid-template-rows: auto auto 1fr auto; grid-template-areas: "thumb title title" "thumb authors venue" "thumb points points" "thumb foot foot"; column-gap: 0; padding: 16px 20px; border: 1px solid var(--line); border-radius: 14px; background: var(--card); box-shadow: var(--shadow); transition: transform .25s, box-shadow .25s, border-color .25s; }
   .pubs .pub:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); border-color: color-mix(in srgb, var(--c-blue) 30%, var(--line)); }
   .pubs .pub > div { display: contents; }
-  .pubs .pub > .thumb { grid-area: thumb; align-self: start; }
-  .pubs .pub h3 { grid-area: title; }
-  .pubs .pub .authors { grid-area: authors; }
-  .pubs .pub .venue-line { grid-area: venue; margin-bottom: 8px; }
-  .pubs .pub .points { grid-area: points; align-self: start; margin: 8px 0 12px; }
-  .pubs .pub .pfoot { grid-area: foot; padding-top: 12px; border-top: 1px dashed var(--line); }
+  .pubs .pub > .thumb { grid-area: thumb; align-self: start; margin-right: 24px; }
+  .pubs .pub h3 { grid-area: title; margin-bottom: 4px; }
+  .pubs .pub .authors { grid-area: authors; margin: 0; align-self: baseline; }
+  .pubs .pub .venue-line { grid-area: venue; margin: 0; padding-left: 10px; align-self: baseline; }
+  .pubs .pub .venue-line::before { content: "·"; margin-right: 8px; color: var(--faint); }
+  .pubs .pub .points { grid-area: points; align-self: start; margin: 10px 0; grid-template-columns: 1fr 1fr; gap: 5px 28px; }
+  .pubs .pub .pfoot { grid-area: foot; padding-top: 10px; border-top: 1px dashed var(--line); }
   .pub .thumb { display: block; background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 6px; filter: var(--thumb-filter); transition: filter .25s; }
   .pubs .pub:hover .thumb { filter: none; }
   .pub .thumb img { width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: contain; }
@@ -388,7 +389,10 @@
     .pubs .pub:hover { transform: none; }
     .year::after { content: "Swipe for more →"; flex: none; height: auto; background: none; font: 500 .74rem/1 Inter, system-ui, sans-serif; color: var(--faint); margin-left: auto; }
     .pubs .pub { grid-template-columns: minmax(0, 1fr); grid-template-areas: "thumb" "title" "authors" "venue" "points" "foot"; grid-template-rows: none; padding: 14px 16px; }
-    .pubs .pub > .thumb { margin-bottom: 12px; }
+    .pubs .pub > .thumb { margin: 0 0 12px; }
+    .pubs .pub .venue-line { padding-left: 0; margin-top: 4px; }
+    .pubs .pub .venue-line::before { display: none; }
+    .pubs .pub .points { grid-template-columns: 1fr; }
     .edu li { grid-template-columns: 1fr; gap: 2px; }
     .edu .loc { text-align: left; }
     .honors li { grid-template-columns: 1fr; gap: 0; padding: 12px 16px; }
