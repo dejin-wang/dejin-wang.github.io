@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dejin (Saul) Wang · Northeastern University</title>
+<meta name="description" content="Dejin Wang — Ph.D. candidate in Interdisciplinary Engineering at Northeastern University, working on robust reinforcement learning for autonomous driving.">
+<meta name="author" content="Dejin Wang">
+<meta property="og:title" content="Dejin (Saul) Wang · Northeastern University">
+<meta property="og:description" content="Robust reinforcement learning for autonomous driving.">
+<meta property="og:image" content="images/profile.jpg">
+<link rel="icon" href="images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
+<script>try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+<style>
+  :root {
+    --bg: #fbfbf9; --card: #ffffff; --surface: #f3f3ef; --text: #15171c; --muted: #4f545c; --faint: #868b92;
+    --line: #e5e4df; --line-2: #d6d5cf;
+    --accent: #a6192e; --accent-soft: #f7e9eb; --navy: #1b2540; --title: #1a56b8; --coauthor: #2f6ac6;
+    --tag-line: #b9c7e3; --tag-text: #3d5a8f; --tag-hi-bg: #e8effb; --tag-hi-text: #1a56b8;
+    --badge-bg: #eceeef; --label: #a6192e; --c-red: #b4233c; --c-red-bg: #f9e8eb; --c-blue: #2459b3; --c-blue-bg: #e6eefb; --c-teal: #0e7c72; --c-teal-bg: #e0f2ef; --c-amber: #935d00; --c-amber-bg: #fbf0d9; --c-violet: #5b46b0; --c-violet-bg: #ece8fa; --c-green: #3b7a1e; --c-green-bg: #e7f3df; --mark: rgba(232, 176, 32, .30);
+    --shadow: 0 1px 2px rgba(16, 20, 34, .05), 0 6px 20px -8px rgba(16, 20, 34, .14);
+    --shadow-lg: 0 2px 6px rgba(16, 20, 34, .06), 0 18px 40px -18px rgba(16, 20, 34, .30);
+    --award-bg: #fbf3df; --award-tx: #855600; --talk-bg: #e7eefa; --talk-tx: #24508f; --life-bg: #e3f3e9; --life-tx: #1c6a3c;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #0f1013; --card: #17181c; --surface: #1d1f24; --text: #e9e9e7; --muted: #a9adb4; --faint: #767b83; --line: #2a2c32; --line-2: #3a3d44; --accent: #ef6b7f; --accent-soft: #3a1f26; --navy: #cfd8ee; --title: #7eaaff; --coauthor: #93b8f4; --tag-line: #3a4a66; --tag-text: #a9bde3; --tag-hi-bg: #1d2b44; --tag-hi-text: #9cc0ff; --badge-bg: #25272c; --label: #ef7a8b; --c-red: #f07a8c; --c-red-bg: #3b1f26; --c-blue: #86acf5; --c-blue-bg: #1c2942; --c-teal: #5fcdbf; --c-teal-bg: #15302d; --c-amber: #eec06a; --c-amber-bg: #372c15; --c-violet: #b3a4f2; --c-violet-bg: #29233f; --c-green: #9bd67a; --c-green-bg: #1e3018; --mark: rgba(238, 192, 106, .26); --shadow: 0 1px 2px rgba(0,0,0,.4), 0 6px 20px -8px rgba(0,0,0,.5); --shadow-lg: 0 2px 6px rgba(0,0,0,.4), 0 18px 40px -18px rgba(0,0,0,.7); --award-bg: #3a2f17; --award-tx: #f0c674; --talk-bg: #1c2a40; --talk-tx: #8fb4ec; --life-bg: #183324; --life-tx: #84d3a2; } }
+  :root[data-theme="dark"] { --bg: #0f1013; --card: #17181c; --surface: #1d1f24; --text: #e9e9e7; --muted: #a9adb4; --faint: #767b83; --line: #2a2c32; --line-2: #3a3d44; --accent: #ef6b7f; --accent-soft: #3a1f26; --navy: #cfd8ee; --title: #7eaaff; --coauthor: #93b8f4; --tag-line: #3a4a66; --tag-text: #a9bde3; --tag-hi-bg: #1d2b44; --tag-hi-text: #9cc0ff; --badge-bg: #25272c; --label: #ef7a8b; --c-red: #f07a8c; --c-red-bg: #3b1f26; --c-blue: #86acf5; --c-blue-bg: #1c2942; --c-teal: #5fcdbf; --c-teal-bg: #15302d; --c-amber: #eec06a; --c-amber-bg: #372c15; --c-violet: #b3a4f2; --c-violet-bg: #29233f; --c-green: #9bd67a; --c-green-bg: #1e3018; --mark: rgba(238, 192, 106, .26); --shadow: 0 1px 2px rgba(0,0,0,.4), 0 6px 20px -8px rgba(0,0,0,.5); --shadow-lg: 0 2px 6px rgba(0,0,0,.4), 0 18px 40px -18px rgba(0,0,0,.7); --award-bg: #3a2f17; --award-tx: #f0c674; --talk-bg: #1c2a40; --talk-tx: #8fb4ec; --life-bg: #183324; --life-tx: #84d3a2; }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.7 Inter, system-ui, -apple-system, "Segoe UI", sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+  body::before { content: ""; position: fixed; inset: 0 0 auto 0; height: 3px; background: linear-gradient(90deg, var(--accent), #c8102e 60%, var(--navy)); z-index: 40; }
+  a { color: var(--c-blue); text-decoration: none; }
+  a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  img { max-width: 100%; display: block; }
+  h1, h2, h3 { font-family: "Source Serif 4", Georgia, "Times New Roman", serif; color: var(--navy); }
+  ::selection { background: color-mix(in srgb, var(--c-blue) 22%, transparent); }
+
+  /* ---------- Top bar ---------- */
+  .nav { position: sticky; top: 0; z-index: 30; background: color-mix(in srgb, var(--bg) 86%, transparent); backdrop-filter: saturate(1.4) blur(10px); -webkit-backdrop-filter: saturate(1.4) blur(10px); border-bottom: 1px solid var(--line); }
+  .nav .in { max-width: 1200px; margin: 0 auto; padding: 0 32px; height: 62px; display: flex; align-items: center; gap: 6px; }
+  .brand { font-family: "Source Serif 4", Georgia, serif; font-weight: 700; font-size: 1.12rem; color: var(--navy); margin-right: auto; letter-spacing: -.01em; }
+  .brand:hover { text-decoration: none; }
+  .brand span { color: var(--accent); }
+  .nav a.l { position: relative; color: var(--muted); font-size: .875rem; font-weight: 500; padding: 8px 12px; border-radius: 6px; }
+  .nav a.l:hover { color: var(--text); background: var(--surface); text-decoration: none; }
+  .nav a.l.active { color: var(--accent); }
+  .nav a.l.active::after { content: ""; position: absolute; left: 12px; right: 12px; bottom: 2px; height: 2px; border-radius: 2px; background: var(--accent); }
+  .theme-btn { margin-left: 10px; width: 34px; height: 34px; display: grid; place-items: center; border-radius: 8px; border: 1px solid var(--line); background: var(--card); color: var(--muted); cursor: pointer; }
+  .theme-btn:hover { color: var(--text); border-color: var(--line-2); }
+  .theme-btn svg { width: 15px; height: 15px; fill: currentColor; }
+
+  /* ---------- Layout ---------- */
+  .layout { max-width: 1200px; margin: 0 auto; padding: 48px 32px 0; display: grid; grid-template-columns: 290px minmax(0, 1fr); gap: 64px; align-items: start; }
+
+  /* Sidebar */
+  .side { position: sticky; top: 90px; }
+  .side .portrait { position: relative; border-radius: 14px; overflow: hidden; box-shadow: var(--shadow-lg); background: var(--surface); }
+  .side .portrait img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; }
+  .side h1 { font-size: 1.9rem; font-weight: 700; line-height: 1.15; margin: 22px 0 6px; letter-spacing: -.01em; text-wrap: balance; }
+  .side h1 .nick { font-weight: 400; font-style: italic; color: var(--c-red); }
+  .side .role { margin: 0; font-weight: 600; font-size: .95rem; color: var(--text); }
+  .side .org { margin: 2px 0 18px; font-size: .9rem; color: var(--muted); }
+  .side .org a { color: var(--muted); }
+  .contact-list { list-style: none; margin: 0 0 20px; padding: 16px 0 0; border-top: 1px solid var(--line); display: grid; gap: 4px; }
+  .contact-list a, .contact-list span { display: flex; align-items: center; gap: 11px; padding: 6px 8px; margin: 0 -8px; border-radius: 6px; font-size: .88rem; color: var(--muted); }
+  .contact-list a:hover { background: var(--surface); color: var(--text); text-decoration: none; }
+  .contact-list svg { width: 16px; height: 16px; fill: var(--faint); flex: none; }
+  .contact-list a:hover svg { fill: var(--accent); }
+  .cv-btn { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 11px 14px; border-radius: 8px; background: var(--navy); color: var(--bg); font-weight: 600; font-size: .9rem; box-shadow: var(--shadow); transition: background .2s, transform .2s; }
+  .cv-btn:hover { background: var(--accent); color: #fff; text-decoration: none; transform: translateY(-1px); }
+  .cv-btn svg { width: 16px; height: 16px; fill: currentColor; }
+
+  /* Content */
+  .content { min-width: 0; }
+  section { padding: 0 0 52px; margin: 0 0 52px; border-bottom: 1px solid var(--line); }
+  section:last-of-type { border-bottom: 0; margin-bottom: 0; }
+  .sec-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 30px; }
+  .eyebrow { margin: 0 0 6px; font-size: .74rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+  .sec-head h2 { font-size: 2rem; font-weight: 600; line-height: 1.1; margin: 0; letter-spacing: -.01em; }
+  .sec-head .note { color: var(--faint); font-size: .84rem; padding-bottom: 4px; }
+
+  /* About */
+  #about p.bio { margin: 0 0 14px; color: var(--text); font-size: 1rem; max-width: 46em; }
+  .interests { list-style: none; margin: 18px 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .interests li { --c: var(--c-blue); --cb: var(--c-blue-bg); display: flex; align-items: center; gap: 14px; padding: 12px 16px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; font-size: .93rem; font-weight: 600; color: var(--navy); transition: border-color .2s, transform .2s, box-shadow .2s; }
+  .interests li:hover { border-color: color-mix(in srgb, var(--c) 45%, var(--line)); box-shadow: var(--shadow); transform: translateY(-1px); }
+  .interests .ic { width: 36px; height: 36px; flex: none; display: grid; place-items: center; border-radius: 10px; background: var(--cb); color: var(--c); }
+  .interests .ic svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .interests .ic svg .f { fill: currentColor; stroke: none; }
+  .nw { white-space: nowrap; }
+  .interests .i-red { --c: var(--c-red); --cb: var(--c-red-bg); }
+  .interests .i-amber { --c: var(--c-amber); --cb: var(--c-amber-bg); }
+  .interests .i-green { --c: var(--c-green); --cb: var(--c-green-bg); }
+  .interests .i-teal { --c: var(--c-teal); --cb: var(--c-teal-bg); }
+  .interests .i-blue { --c: var(--c-blue); --cb: var(--c-blue-bg); }
+  .interests .i-violet { --c: var(--c-violet); --cb: var(--c-violet-bg); }
+  /* Emphasis system */
+  .mk, .bio strong { font-weight: 600; color: var(--c-red); }
+  .points b { font-weight: 600; color: var(--navy); }
+  .num { font-weight: 700; color: var(--label); }
+
+  /* News — timeline */
+  .news { list-style: none; margin: 0; padding: 0 0 0 4px; position: relative; }
+  .news::before { content: ""; position: absolute; left: 87px; top: 6px; bottom: 6px; width: 1px; background: var(--line); }
+  .news li { position: relative; display: grid; grid-template-columns: 70px 34px minmax(0, 1fr); gap: 0 14px; align-items: start; padding: 10px 0; font-size: .95rem; }
+  .news time { font-size: .8rem; font-weight: 700; color: var(--faint); font-variant-numeric: tabular-nums; padding-top: 6px; text-align: right; letter-spacing: .02em; }
+  .news li.pub time { color: var(--accent); }
+  .news .emo { position: relative; z-index: 1; width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; font-size: .95rem; line-height: 1; background: var(--card); border: 1px solid var(--line); box-shadow: 0 0 0 4px var(--bg); }
+  .news li.pub .emo { background: var(--accent-soft); border-color: transparent; }
+  .news .txt { padding: 4px 0 0; color: var(--text); }
+  .news b, .news i { color: var(--navy); font-weight: 600; }
+  .news .kind { display: inline-block; font-size: .66rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 1px 7px; margin-right: 8px; border-radius: 4px; vertical-align: 1px; background: var(--accent-soft); color: var(--accent); }
+  .news .kind.award { background: var(--award-bg); color: var(--award-tx); }
+  .news .kind.talk { background: var(--talk-bg); color: var(--talk-tx); }
+  .news .kind.life { background: var(--life-bg); color: var(--life-tx); }
+  .news .hidden { display: none; }
+  .news.open .hidden { display: grid; }
+  .more { margin: 14px 0 0 122px; display: inline-flex; align-items: center; gap: 8px; background: var(--card); border: 1px solid var(--line); color: var(--text); font: inherit; font-size: .84rem; font-weight: 600; cursor: pointer; padding: 7px 16px; border-radius: 999px; box-shadow: var(--shadow); }
+  .more:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* Research */
+  .year { display: flex; align-items: center; gap: 14px; font-family: "Source Serif 4", Georgia, serif; font-size: 1.15rem; font-weight: 700; color: var(--navy); margin: 36px 0 4px; }
+  .year::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+  .sec-head + .year { margin-top: 0; }
+  .pub { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 26px; align-items: start; padding: 24px 0; border-bottom: 1px dashed var(--line); }
+  .pubs .pub:last-child { border-bottom: 0; }
+  .pub .thumb { display: block; background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 8px; box-shadow: var(--shadow); transition: transform .25s, box-shadow .25s; }
+  .pub .thumb:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+  .pub .thumb img { width: 100%; aspect-ratio: 16 / 10; object-fit: contain; }
+  .pub h3 { font-family: Inter, system-ui, sans-serif; font-size: 1.04rem; font-weight: 650; line-height: 1.45; margin: 0 0 6px; letter-spacing: -.005em; }
+  .pub h3 a { color: var(--title); }
+  .pub .authors { font-size: .9rem; color: var(--text); margin: 0 0 8px; }
+  .pub .authors b { font-weight: 700; }
+  .pub .authors a, .pub .authors .co { color: var(--coauthor); }
+  .pub .venue-line { margin: 0 0 12px; font-size: .88rem; line-height: 1.6; }
+  .pub .venue-line > span { margin-right: 6px; }
+  .vbadge { font-weight: 700; font-size: .78rem; color: var(--text); background: var(--badge-bg); border: 1px solid var(--line); border-radius: 4px; padding: 1px 8px; letter-spacing: .02em; }
+  .vname { font-style: italic; color: var(--muted); }
+  .vname .oral { font-style: normal; }
+  .vyear { font-weight: 600; color: var(--text); }
+  .points { list-style: none; margin: 0 0 14px; padding: 0; display: grid; gap: 5px; font-size: .9rem; line-height: 1.55; }
+  .points li { position: relative; padding-left: 16px; }
+  .points li::before { content: ""; position: absolute; left: 2px; top: .62em; width: 6px; height: 6px; border-radius: 50%; background: var(--title); }
+  .points .lbl { font-weight: 700; color: var(--label); margin-right: 5px; }
+  .pfoot { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+  .pfoot .lnk { display: inline-flex; align-items: center; gap: 6px; font-size: .82rem; font-weight: 600; color: var(--title); border: 1px solid var(--tag-line); border-radius: 6px; padding: 3px 10px; background: var(--card); }
+  .pfoot .lnk:hover { background: var(--tag-hi-bg); text-decoration: none; }
+  .pfoot .lnk svg { width: 13px; height: 13px; fill: currentColor; }
+  .pfoot .sep { width: 1px; height: 18px; background: var(--line); margin: 0 4px; }
+  .ptag { display: inline-flex; align-items: center; gap: 5px; font-size: .75rem; font-weight: 500; color: var(--tag-text); border: 1px dashed var(--tag-line); border-radius: 999px; padding: 2px 10px; }
+  .ptag.hi { border: 1px solid transparent; background: var(--tag-hi-bg); color: var(--tag-hi-text); font-weight: 600; }
+  .ptag.hi svg { width: 11px; height: 11px; fill: currentColor; }
+
+  /* Education — timeline */
+  .edu { list-style: none; margin: 0; padding: 0 0 0 26px; position: relative; }
+  .edu::before { content: ""; position: absolute; left: 7px; top: 10px; bottom: 10px; width: 2px; background: linear-gradient(var(--accent), var(--line) 40%); border-radius: 2px; }
+  .edu li { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px; padding: 14px 18px; margin-bottom: 12px; background: var(--card); border: 1px solid var(--line); border-radius: 10px; }
+  .edu li::before { content: ""; position: absolute; left: -25px; top: 22px; width: 12px; height: 12px; border-radius: 50%; background: var(--bg); border: 2px solid var(--line-2); }
+  .edu li.now { border-color: color-mix(in srgb, var(--accent) 35%, var(--line)); box-shadow: var(--shadow); }
+  .edu li.now::before { background: var(--accent); border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
+  .edu .school { font-family: "Source Serif 4", Georgia, serif; font-weight: 700; font-size: 1.12rem; color: var(--navy); }
+  .edu .deg { font-size: .93rem; font-weight: 500; }
+  .edu .adv { font-size: .86rem; color: var(--muted); }
+  .edu .loc { text-align: right; font-size: .84rem; color: var(--faint); white-space: nowrap; }
+
+  /* Honors */
+  .honors { list-style: none; margin: 0; padding: 0; border: 1px solid var(--line); border-radius: 12px; background: var(--card); overflow: hidden; }
+  .honors li { display: grid; grid-template-columns: 124px minmax(0, 1fr); gap: 16px; padding: 12px 20px; border-top: 1px solid var(--line); font-size: .93rem; }
+  .honors li:first-child { border-top: 0; }
+  .honors li:hover { background: var(--surface); }
+  .honors .y { color: var(--faint); font-size: .82rem; font-weight: 600; font-variant-numeric: tabular-nums; padding-top: 2px; }
+  .honors .aw { font-weight: 600; color: var(--navy); }
+  .honors .w { color: var(--muted); }
+  .honors li .tag { display: inline-block; margin-left: 8px; padding: 0 7px; border-radius: 4px; font-size: .7rem; font-weight: 700; background: var(--label); color: var(--bg); vertical-align: 1px; }
+
+  /* Personal */
+  .tabs { display: inline-flex; gap: 4px; padding: 4px; border: 1px solid var(--line); border-radius: 10px; background: var(--card); margin-bottom: 20px; }
+  .tabs button { border: 0; background: none; color: var(--muted); font: inherit; font-size: .86rem; font-weight: 600; padding: 7px 16px; border-radius: 7px; cursor: pointer; }
+  .tabs button[aria-selected="true"] { background: var(--navy); color: var(--bg); }
+  .panel { display: none; }
+  .panel.on { display: block; }
+  .panel > p { color: var(--muted); margin: 0 0 18px; max-width: 46em; font-size: .95rem; }
+  .photos { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .photos img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 10px; cursor: zoom-in; box-shadow: var(--shadow); transition: transform .25s; }
+  .photos img:hover { transform: scale(1.03); }
+
+  /* Contact */
+  .contact { position: relative; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px; align-items: center; padding: 30px 34px; border-radius: 14px; background: var(--navy); color: var(--bg); }
+  .contact::after { content: ""; position: absolute; right: -60px; top: -60px; width: 220px; height: 220px; border-radius: 50%; background: radial-gradient(circle, rgba(200,16,46,.45), transparent 70%); }
+  .contact h2 { color: var(--bg); font-size: 1.5rem; margin: 0 0 4px; }
+  .contact p { margin: 0; opacity: .8; font-size: .94rem; }
+  .contact p a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+  .contact .acts { position: relative; z-index: 1; display: flex; gap: 10px; flex-wrap: wrap; }
+  .contact .acts a { display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; border-radius: 8px; font-size: .88rem; font-weight: 600; background: var(--bg); color: var(--navy); }
+  .contact .acts a.ghost { background: transparent; color: var(--bg); border: 1px solid color-mix(in srgb, var(--bg) 35%, transparent); }
+  .contact .acts a:hover { text-decoration: none; filter: brightness(1.05); }
+  .contact .acts svg { width: 15px; height: 15px; fill: currentColor; }
+
+  footer { max-width: 1200px; margin: 64px auto 0; padding: 26px 32px 40px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; color: var(--faint); font-size: .82rem; }
+
+  .lb { position: fixed; inset: 0; background: rgba(8,10,16,.88); backdrop-filter: blur(4px); display: none; place-items: center; z-index: 60; padding: 24px; cursor: zoom-out; }
+  .lb.on { display: grid; }
+  .lb img { max-height: 90vh; max-width: 100%; border-radius: 10px; }
+
+  /* ---------- Multi-colour accents ---------- */
+  body::before { background: linear-gradient(90deg, var(--c-red), var(--c-amber) 35%, var(--c-teal) 68%, var(--c-blue)); }
+  #about .eyebrow { color: var(--c-red); }
+  #news .eyebrow { color: var(--c-blue); }
+  #research .eyebrow { color: var(--c-teal); }
+  #education .eyebrow { color: var(--c-violet); }
+  #honors .eyebrow { color: var(--c-amber); }
+  #personal .eyebrow { color: var(--c-teal); }
+  /* News: one hue per type */
+  .news .kind { background: var(--c-red-bg); color: var(--c-red); }
+  .news .kind.award { background: var(--c-amber-bg); color: var(--c-amber); }
+  .news .kind.talk { background: var(--c-blue-bg); color: var(--c-blue); }
+  .news .kind.life { background: var(--c-teal-bg); color: var(--c-teal); }
+  .news li.pub time { color: var(--c-red); }
+  .news li:has(.kind.award) time { color: var(--c-amber); }
+  .news li:has(.kind.talk) time { color: var(--c-blue); }
+  .news li:has(.kind.life) time { color: var(--c-teal); }
+  .news li.pub .emo { background: var(--c-red-bg); border-color: transparent; }
+  .news li:has(.kind.award) .emo { background: var(--c-amber-bg); border-color: transparent; }
+  .news li:has(.kind.talk) .emo { background: var(--c-blue-bg); border-color: transparent; }
+  .news li:has(.kind.life) .emo { background: var(--c-teal-bg); border-color: transparent; }
+  /* Research bullets: one hue per role */
+  .points li::before { background: var(--line-2); }
+  .points .lbl.l-problem { color: var(--c-red); }
+  .points .lbl.l-method { color: var(--c-blue); }
+  .points .lbl.l-result { color: var(--c-teal); }
+  .points .lbl.l-eval { color: var(--c-violet); }
+  .points .lbl.l-idea { color: var(--c-amber); }
+  .points li:has(.l-problem) b { color: var(--c-red); }
+  .points li:has(.l-method) b { color: var(--c-blue); }
+  .points li:has(.l-result) b { color: var(--c-teal); }
+  .points li:has(.l-eval) b { color: var(--c-violet); }
+  .points li:has(.l-idea) b { color: var(--c-amber); }
+  .points li:has(.l-problem)::before { background: var(--c-red); }
+  .points li:has(.l-method)::before { background: var(--c-blue); }
+  .points li:has(.l-result)::before { background: var(--c-teal); }
+  .points li:has(.l-eval)::before { background: var(--c-violet); }
+  .points li:has(.l-idea)::before { background: var(--c-amber); }
+  .ptag.hi { background: var(--c-teal-bg); color: var(--c-teal); }
+  .vbadge { color: var(--c-blue); background: var(--c-blue-bg); border-color: transparent; }
+  /* Education / Honors / Personal */
+  .edu::before { background: linear-gradient(var(--c-violet), var(--line) 45%); }
+  .edu li.now { border-color: color-mix(in srgb, var(--c-violet) 35%, var(--line)); }
+  .edu li.now::before { background: var(--c-violet); border-color: var(--c-violet); box-shadow: 0 0 0 4px var(--c-violet-bg); }
+  .honors .y { color: var(--c-amber); }
+  .honors li .tag { background: var(--c-amber); color: var(--bg); }
+  .tabs button[aria-selected="true"] { background: var(--c-teal); color: var(--card); }
+  .contact::after { background: radial-gradient(circle, color-mix(in srgb, var(--c-teal) 55%, transparent), transparent 70%); }
+  .contact::before { content: ""; position: absolute; left: -50px; bottom: -70px; width: 200px; height: 200px; border-radius: 50%; background: radial-gradient(circle, color-mix(in srgb, var(--c-red) 45%, transparent), transparent 70%); }
+  .contact > div { position: relative; z-index: 1; }
+
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 1000px) {
+    .layout { grid-template-columns: 1fr; gap: 40px; padding-top: 32px; }
+    .side { position: static; display: grid; grid-template-columns: 132px minmax(0, 1fr); gap: 0 24px; align-items: start; }
+    .side .portrait { grid-row: span 3; }
+    .side h1 { margin-top: 0; font-size: 1.8rem; }
+    .side .org { margin-bottom: 12px; }
+    .contact-list { grid-column: 1 / -1; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 18px; }
+    .cv-btn { grid-column: 1 / -1; width: auto; }
+  }
+  @media (max-width: 720px) {
+    .nav .in { padding: 0 16px; }
+    .nav a.l { display: none; }
+    .layout { padding: 24px 16px 0; }
+    .side { grid-template-columns: 96px minmax(0, 1fr); gap: 0 16px; }
+    .side h1 { font-size: 1.55rem; }
+    .contact-list { grid-template-columns: 1fr 1fr; gap: 0 8px; }
+    .contact-list li:first-child { grid-column: 1 / -1; }
+    section { padding-bottom: 40px; margin-bottom: 40px; }
+    .interests { grid-template-columns: 1fr; gap: 8px; }
+    .interests li { padding: 9px 12px; gap: 12px; font-size: .9rem; }
+    .interests .ic { width: 32px; height: 32px; border-radius: 9px; }
+    .sec-head { flex-direction: column; align-items: flex-start; gap: 4px; }
+    .sec-head h2 { font-size: 1.7rem; }
+    .news::before { left: 17px; }
+    .news li { grid-template-columns: 34px minmax(0, 1fr); grid-template-areas: "emo time" "emo txt"; gap: 0 12px; }
+    .news .emo { grid-area: emo; } .news time { grid-area: time; text-align: left; padding-top: 0; } .news .txt { grid-area: txt; padding-top: 0; }
+    .more { margin-left: 46px; }
+    .pub { grid-template-columns: 1fr; gap: 14px; }
+    .edu li { grid-template-columns: 1fr; gap: 2px; }
+    .edu .loc { text-align: left; }
+    .honors li { grid-template-columns: 1fr; gap: 0; padding: 12px 16px; }
+    .photos { grid-template-columns: repeat(2, 1fr); }
+    .contact { grid-template-columns: 1fr; padding: 26px 22px; }
+    footer { padding: 22px 16px 32px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Main">
+  <div class="in">
+    <a class="brand" href="#about">Dejin Wang<span>.</span></a>
+    <a class="l" href="#about">About</a>
+    <a class="l" href="#news">News</a>
+    <a class="l" href="#research">Research</a>
+    <a class="l" href="#education">Education</a>
+    <a class="l" href="#honors">Honors</a>
+    <a class="l" href="#personal">Personal</a>
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle dark mode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z"/></svg></button>
+  </div>
+</nav>
+
+<div class="layout">
+  <aside class="side">
+    <div class="portrait"><img src="images/profile.jpg" alt="Portrait of Dejin Wang"></div>
+    <h1>Dejin <span class="nick">(Saul)</span> Wang</h1>
+    <p class="role">Ph.D. Candidate</p>
+    <p class="org">Interdisciplinary Engineering<br><a href="https://www.northeastern.edu/">Northeastern University</a></p>
+    <ul class="contact-list">
+      <li><a href="mailto:wang.dej@northeastern.edu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg>wang.dej@northeastern.edu</a></li>
+      <li><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Boston, MA, USA</span></li>
+      <li><a href="https://scholar.google.com/citations?user=2vMnqO4AAAAJ&hl=en"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.9V17h2V9zM5 13.2v4L12 21l7-3.8v-4L12 17z"/></svg>Google Scholar</a></li>
+      <li><a href="https://github.com/dejin-wang"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/dejin-wang-a462b2299"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.5V9h3.6zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg>LinkedIn</a></li>
+      <li><a href="https://www.researchgate.net/profile/Wang-Dejin"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h18v18H3zm5 4v10h2v-4h1.2l2.3 4h2.3l-2.6-4.4A3 3 0 0 0 11 7zm2 2h1a1 1 0 0 1 0 2h-1z"/></svg>ResearchGate</a></li>
+    </ul>
+    <a class="cv-btn" href="assets/dejin.pdf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm-1 7V3.5L18.5 9zM8 13h8v2H8zm0 4h8v2H8z"/></svg>Download CV</a>
+  </aside>
+
+  <main class="content">
+  <section id="about">
+    <div class="sec-head"><div><p class="eyebrow">Introduction</p><h2>About Me</h2></div></div>
+    <p class="bio">I am a <strong>third-year Ph.D. candidate in Interdisciplinary Engineering</strong> at <a href="https://www.northeastern.edu/">Northeastern University</a>, advised by <a href="https://ghoreishi.lab.northeastern.edu/">Prof. Seyede Fatemeh Ghoreishi</a>. I received my M.S. in Operations Research and Cybernetics from <a href="https://en.nankai.edu.cn/">Nankai University</a>, working with <a href="https://ai.nankai.edu.cn/info/1033/4287.htm">Prof. Zhongxin Liu</a>, and my B.Eng. in Mechanical Engineering from <a href="https://en.cug.edu.cn/">China University of Geosciences (Wuhan)</a>.</p>
+    <p class="bio">My research develops machine-learning methods that keep autonomous-driving policies <strong>stable and robust</strong> under uncertainty, distribution shift, and adversarial conditions.</p>
+    <p class="bio">I welcome inquiries regarding <strong>research collaboration</strong>, particularly in the following areas:</p>
+    <ul class="interests">
+      <li class="i-red"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.4"/><path d="M3.4 11h6.2M14.4 11h6.2M12 14.4V21"/></svg></span><span class="t">Driving-style modeling</span></li>
+      <li class="i-amber"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5.2c0 4.3 2.9 8.2 7 9.8 4.1-1.6 7-5.5 7-9.8V6z"/><path d="m9 12 2.2 2.2L15.5 10"/></svg></span><span class="t">Risk-sensitive &amp; robust RL</span></li>
+      <li class="i-green"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h2.5c4.5 0 6.5 10 11 10H20"/><path d="M4 17h2.5c1.7 0 3-1.4 4.1-3.3M13.4 10.3C14.5 8.4 15.8 7 17.5 7H20"/><path d="m17.5 4.5 2.5 2.5-2.5 2.5M17.5 14.5l2.5 2.5-2.5 2.5"/></svg></span><span class="t">Domain randomization &amp; <span class="nw">sim-to-real</span></span></li>
+      <li class="i-teal"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2.1 4.9-4.9 2.1 2.1-4.9z"/></svg></span><span class="t">Unsupervised skill discovery</span></li>
+      <li class="i-blue"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 16.5c2-3 4-3 6 0s4 3 6 0 3.5-2.6 6-1"/><circle class="f" cx="5" cy="8" r="1.1"/><circle class="f" cx="9.5" cy="5.2" r="1.1"/><circle class="f" cx="14.5" cy="8.6" r="1.1"/><circle class="f" cx="19" cy="5.8" r="1.1"/></svg></span><span class="t">Diffusion models for RL</span></li>
+      <li class="i-violet"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="8" width="14" height="11" rx="3"/><path d="M12 8V5.4M9.8 16h4.4M3 12.5V15M21 12.5V15"/><circle class="f" cx="12" cy="4.2" r="1.2"/><circle class="f" cx="9.3" cy="12.6" r="1.2"/><circle class="f" cx="14.7" cy="12.6" r="1.2"/></svg></span><span class="t">Physical AI</span></li>
+    </ul>
+  </section>
+
+  <!-- News -->
+  <section id="news">
+    <div class="sec-head"><div><p class="eyebrow">Updates</p><h2>News</h2></div></div>
+    <ul class="news" id="newsList">
+      <!--
+        HOW TO ADD NEWS (newest first)
+        1. Copy ONE template below and paste it on the line right after this comment.
+        2. Change the date, the emoji, and the text.
+        3. The first 6 items are shown; add "hidden" to the class of older items
+           so they only appear after "Show all news" (e.g. class="hidden pub").
+
+        Paper (red):
+        <li class="pub"><time>Mon 2027</time><span class="emo">📄</span><div class="txt"><span class="kind">Paper</span>Paper accepted to <b>VENUE 2027</b>.</div></li>
+
+        Award (amber):
+        <li><time>Mon 2027</time><span class="emo">✈️</span><div class="txt"><span class="kind award">Award</span>Received the AWARD NAME for <b>VENUE 2027</b>.</div></li>
+
+        Talk or poster (blue):
+        <li><time>Mon 2027</time><span class="emo">🎤</span><div class="txt"><span class="kind talk">Talk</span>Presented “TITLE” at <b>EVENT</b>.</div></li>
+
+        Team or milestone (teal):
+        <li><time>Mon 2027</time><span class="emo">🎓</span><div class="txt"><span class="kind life">Milestone</span>WHAT HAPPENED.</div></li>
+
+        Emphasis: <b>bold navy</b> for venues, <i>italic</i> for journal names,
+        <span class="num">red</span> for achievements (e.g. Best Paper, oral).
+      -->
+      <li class="pub"><time>Nov 2026</time><span class="emo">📄</span><div class="txt"><span class="kind">Paper</span>Paper accepted to <i>IEEE Transactions on Vehicular Technology</i>.</div></li>
+      <li><time>Jun 2026</time><span class="emo">✈️</span><div class="txt"><span class="kind award">Award</span>Received the IEEE RAS Travel Support Award for <b>IEEE/RSJ IROS 2026</b>, Pittsburgh, PA.</div></li>
+      <li class="pub"><time>Jun 2026</time><span class="emo">📄</span><div class="txt"><span class="kind">Paper</span>Paper accepted to <b>IEEE/RSJ IROS 2026</b>.</div></li>
+      <li><time>Jun 2026</time><span class="emo">🏅</span><div class="txt"><span class="kind life">Team</span>As captain, led the Nantianmen Dragon Boat Team to a <span class="num">bronze medal</span> in the Division C Major category at the Boston Dragon Boat Festival.</div></li>
+      <li class="pub"><time>Jun 2026</time><span class="emo">📘</span><div class="txt"><span class="kind">Paper</span><span class="num">First journal paper</span> accepted to the <i>International Journal of Intelligent Transportation Systems Research</i>.</div></li>
+      <li class="pub"><time>May 2026</time><span class="emo">📄</span><div class="txt"><span class="kind">Paper</span>Paper accepted to <b>IEEE ITSC 2026</b>.</div></li>
+      <li class="hidden"><time>Mar 2026</time><span class="emo">📊</span><div class="txt"><span class="kind talk">Poster</span>Presented the poster “RGDR: Reward-Guided Domain Randomization for Autonomous Driving” at CEE Industry Leadership Night, Northeastern University.</div></li>
+      <li class="hidden"><time>Mar 2026</time><span class="emo">✈️</span><div class="txt"><span class="kind award">Award</span>Received a travel grant for <b>ACC 2026</b>, New Orleans, LA.</div></li>
+      <li class="hidden"><time>Feb 2026</time><span class="emo">🎓</span><div class="txt"><span class="kind life">Milestone</span>Passed the Ph.D. qualifying examination. I thank my committee members, <a href="https://ghoreishi.lab.northeastern.edu/">Prof. Fatemeh Ghoreishi</a>, <a href="https://www.khoury.northeastern.edu/people/chris-amato/">Prof. Christopher Amato</a>, and <a href="https://coe.northeastern.edu/people/dennedy-frank-james/">Prof. James Dennedy-Frank</a>, for their constructive feedback.</div></li>
+      <li class="hidden pub"><time>Jan 2026</time><span class="emo">📄</span><div class="txt"><span class="kind">Paper</span>Paper accepted to <b>IEEE ICRA 2026</b>, Vienna, Austria.</div></li>
+      <li class="hidden pub"><time>Jan 2026</time><span class="emo">🎤</span><div class="txt"><span class="kind">Paper</span>Paper accepted to <b>ACC 2026</b> for <span class="num">oral presentation</span>.</div></li>
+      <li class="hidden"><time>Nov 2025</time><span class="emo">🎤</span><div class="txt"><span class="kind talk">Talk</span>Presented “RGDR: Reward-Guided Domain Randomization for Autonomous Driving” at the CEE Research Expo, Northeastern University.</div></li>
+      <li class="hidden"><time>Aug 2025</time><span class="emo">🎤</span><div class="txt"><span class="kind talk">Talk</span>Presented “Robust Reinforcement Learning for Autonomous Driving in Uncertain Environments” at <b>IEEE CASE 2025</b>, Los Angeles, CA.</div></li>
+      <li class="hidden pub"><time>Jul 2025</time><span class="emo">📄</span><div class="txt"><span class="kind">Paper</span>Paper accepted to <b>IEEE ITSC 2025</b>.</div></li>
+      <li class="hidden"><time>Jun 2025</time><span class="emo">✈️</span><div class="txt"><span class="kind award">Award</span>Received a travel grant for <b>IEEE CASE 2025</b>.</div></li>
+      <li class="hidden pub"><time>May 2025</time><span class="emo">📄</span><div class="txt"><span class="kind">Paper</span>Paper accepted to <b>IEEE CASE 2025</b>.</div></li>
+      <li class="hidden"><time>Dec 2024</time><span class="emo">📊</span><div class="txt"><span class="kind talk">Poster</span>Presented the poster “Probabilistic Adaptation for Robust Decision-Making of Autonomous Vehicles in Non-Stationary Environments” at CEE Industry Night, Northeastern University.</div></li>
+    </ul>
+    <button class="more" id="moreBtn">Show all news</button>
+  </section>
+
+  <!-- Research -->
+  <section id="research">
+    <div class="sec-head"><div><p class="eyebrow">Publications</p><h2>Research</h2></div><span class="note">Publications since 2025 · complete list on <a href="https://scholar.google.com/citations?user=2vMnqO4AAAAJ&hl=en">Google Scholar</a></span></div>
+    <div class="year">2026</div>
+    <div class="pubs">
+      <article class="pub">
+        <a class="thumb" href="https://github.com/dejin-wang/Uncertainty-Aware-Driving-Style-Inference"><img src="images/research/style-inference.svg" alt="Driving-style inference framework" loading="lazy"></a>
+        <div>
+          <h3><a href="https://github.com/dejin-wang/Uncertainty-Aware-Driving-Style-Inference">Uncertainty-Aware Driving-Style Inference Using Interpretable Continuous Traits</a></h3>
+          <p class="authors"><b>Dejin Wang</b>, <a href="https://ghoreishi.lab.northeastern.edu/">Seyede Fatemeh Ghoreishi</a></p>
+          <div class="venue-line"><span class="vbadge">[TVT]</span><span class="vname">IEEE Transactions on Vehicular Technology</span><span class="vyear">2026</span></div>
+          <ul class="points"><li><span class="lbl l-problem">Problem:</span>Style is usually <b>discrete</b> and <b>uncertainty-free</b>.</li><li><span class="lbl l-method">Method:</span><b>PPO teacher</b> → <b>probabilistic Transformer</b> student.</li><li><span class="lbl l-result">Output:</span>Six continuous traits with <b>calibrated uncertainty</b>.</li><li><span class="lbl l-eval">Evaluation:</span>highway-env and <b>NGSIM US-101</b>.</li></ul>
+          <div class="pfoot"><a class="lnk" href="https://github.com/dejin-wang/Uncertainty-Aware-Driving-Style-Inference"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>Code</a><span class="sep"></span><span class="ptag hi"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5z"/></svg>Driving-Style Modeling</span><span class="ptag">Uncertainty Quantification</span><span class="ptag">Transformer</span></div>
+        </div>
+      </article>
+      <article class="pub">
+        <a class="thumb" href="https://github.com/dejin-wang/SRDR"><img src="images/research/srdr.svg" alt="Smoothed return-guided sampling" loading="lazy"></a>
+        <div>
+          <h3><a href="https://github.com/dejin-wang/SRDR">SRDR: Smoothed Return-Guided Domain Randomization for Stable and Robust Policy Learning</a></h3>
+          <p class="authors"><b>Dejin Wang</b>, <a href="https://ghoreishi.lab.northeastern.edu/">Seyede Fatemeh Ghoreishi</a></p>
+          <div class="venue-line"><span class="vbadge">[IROS]</span><span class="vname">IEEE/RSJ International Conference on Intelligent Robots and Systems</span><span class="vyear">2026</span></div>
+          <ul class="points"><li><span class="lbl l-problem">Problem:</span>Raw returns are a <b>noisy</b> difficulty signal.</li><li><span class="lbl l-method">Method:</span><b>Smoothed bootstrapped return</b> guides sampling.</li><li><span class="lbl l-result">Result:</span><b>Stabler</b> selection, stronger <b>OOD robustness</b>.</li><li><span class="lbl l-eval">Evaluation:</span>Gym, <b>CARLA</b>, Highway-Env.</li></ul>
+          <div class="pfoot"><a class="lnk" href="https://github.com/dejin-wang/SRDR"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>Code</a><span class="sep"></span><span class="ptag hi"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5z"/></svg>Domain Randomization</span><span class="ptag">Robust RL</span><span class="ptag">Sim-to-Real</span></div>
+        </div>
+      </article>
+      <article class="pub">
+        <a class="thumb" href="https://doi.org/10.1109/ICRA57385.2026.11697044"><img src="images/research/srpo.svg" alt="Self-reflection policy optimization" loading="lazy"></a>
+        <div>
+          <h3><a href="https://doi.org/10.1109/ICRA57385.2026.11697044">SRPO: Self-Reflection Policy Optimization for Stable and Robust Autonomous Driving</a></h3>
+          <p class="authors"><b>Dejin Wang</b>, <a href="https://ghoreishi.lab.northeastern.edu/">Seyede Fatemeh Ghoreishi</a></p>
+          <div class="venue-line"><span class="vbadge">[ICRA]</span><span class="vname">IEEE International Conference on Robotics and Automation</span><span class="vyear">2026</span></div>
+          <ul class="points"><li><span class="lbl l-idea">Idea:</span>Policy <b>benchmarks itself</b> against its history.</li><li><span class="lbl l-method">Method:</span><b>Rank-based credit</b> across trajectory steps.</li><li><span class="lbl l-result">Theory:</span>Preserves <b>optimality and convergence</b>.</li><li><span class="lbl l-eval">Evaluation:</span>Highway-Env and <b>CARLA</b>, adversarial and OOD.</li></ul>
+          <div class="pfoot"><a class="lnk" href="https://doi.org/10.1109/ICRA57385.2026.11697044"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm-1 7V3.5L18.5 9zM8 13h8v2H8zm0 4h8v2H8z"/></svg>Paper</a><span class="sep"></span><span class="ptag hi"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5z"/></svg>Policy Optimization</span><span class="ptag">Robust RL</span><span class="ptag">Autonomous Driving</span></div>
+        </div>
+      </article>
+      <article class="pub">
+        <a class="thumb" href="https://link.springer.com/article/10.1007/s13177-026-00685-y"><img src="images/research/prob-adaptation.svg" alt="Probabilistic policy combination" loading="lazy"></a>
+        <div>
+          <h3><a href="https://link.springer.com/article/10.1007/s13177-026-00685-y">Probabilistic Adaptation for Robust Decision-Making of Autonomous Vehicles in Non-Stationary Environments</a></h3>
+          <p class="authors"><b>Dejin Wang</b>, <a href="https://ghoreishi.lab.northeastern.edu/">Seyede Fatemeh Ghoreishi</a></p>
+          <div class="venue-line"><span class="vbadge">[IJITSR]</span><span class="vname">International Journal of Intelligent Transportation Systems Research</span><span class="vyear">2026</span></div>
+          <ul class="points"><li><span class="lbl l-problem">Problem:</span>Fixed policies fail as <b>conditions change</b>.</li><li><span class="lbl l-method">Method:</span><b>Probabilistically combine</b> pre-trained policies.</li><li><span class="lbl l-result">Result:</span>Adapts in real time, <b>no retraining</b>.</li></ul>
+          <div class="pfoot"><a class="lnk" href="https://link.springer.com/article/10.1007/s13177-026-00685-y"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm-1 7V3.5L18.5 9zM8 13h8v2H8zm0 4h8v2H8z"/></svg>Paper</a><span class="sep"></span><span class="ptag hi"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5z"/></svg>Non-Stationary Environments</span><span class="ptag">Probabilistic Reasoning</span><span class="ptag">Decision-Making</span></div>
+        </div>
+      </article>
+      <article class="pub">
+        <a class="thumb" href="https://github.com/dejin-wang/Sequential-Adversarial-Policy"><img src="images/research/sequential-adversary.svg" alt="Sequential adversary at an intersection" loading="lazy"></a>
+        <div>
+          <h3><a href="https://github.com/dejin-wang/Sequential-Adversarial-Policy">Sequential Adversarial Policy Learning for Long-Horizon Planning against Autonomous Driving</a></h3>
+          <p class="authors"><b>Dejin Wang</b>, <a href="https://ghoreishi.lab.northeastern.edu/">Seyede Fatemeh Ghoreishi</a></p>
+          <div class="venue-line"><span class="vbadge">[ITSC]</span><span class="vname">IEEE International Conference on Intelligent Transportation Systems</span><span class="vyear">2026</span></div>
+          <ul class="points"><li><span class="lbl l-idea">Idea:</span><b>Long-horizon</b> adversarial action sequences.</li><li><span class="lbl l-idea">Goal:</span>Expose <b>hidden failure modes</b> of AV policies.</li><li><span class="lbl l-eval">Evaluation:</span><b>Highway-Env</b> intersection and roundabout.</li></ul>
+          <div class="pfoot"><a class="lnk" href="https://github.com/dejin-wang/Sequential-Adversarial-Policy"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>Code</a><span class="sep"></span><span class="ptag hi"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5z"/></svg>Adversarial RL</span><span class="ptag">Safety Testing</span><span class="ptag">Long-Horizon Planning</span></div>
+        </div>
+      </article>
+      <article class="pub">
+        <div class="thumb"><img src="images/research/state-only-il.svg" alt="Two-stage state-only imitation learning" loading="lazy"></div>
+        <div>
+          <h3>Entropy-Regularized Two-Stage State-Only Imitation Learning under Unknown Dynamics</h3>
+          <p class="authors"><b>Dejin Wang</b>, <a href="https://ghoreishi.lab.northeastern.edu/">Seyede Fatemeh Ghoreishi</a></p>
+          <div class="venue-line"><span class="vbadge">[ACC]</span><span class="vname">American Control Conference <span class="oral num">(Oral)</span></span><span class="vyear">2026</span></div>
+          <ul class="points"><li><span class="lbl l-problem">Setting:</span><b>State-only</b> demos, <b>unknown dynamics</b>.</li><li><span class="lbl l-method">Method:</span><b>Two-stage</b>, <b>entropy-regularized</b> learning.</li></ul>
+          <div class="pfoot"><span class="ptag hi"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5z"/></svg>Imitation Learning</span><span class="ptag">Learning from Observation</span><span class="ptag">Control</span></div>
+        </div>
+      </article>
+    </div>
+    <div class="year">2025</div>
+    <div class="pubs">
+      <article class="pub">
+        <a class="thumb" href="https://arxiv.org/abs/2512.22069"><img src="images/research/adv-data-selection.svg" alt="Selective adversarial training" loading="lazy"></a>
+        <div>
+          <h3><a href="https://arxiv.org/abs/2512.22069">Scaling Adversarial Training via Data Selection</a></h3>
+          <p class="authors"><span class="co">Youran Ye</span>, <b>Dejin Wang</b>, <span class="co">Ajinkya Bhandare</span></p>
+          <div class="venue-line"><span class="vbadge">[arXiv]</span><span class="vname">Workshop paper</span><span class="vyear">2025</span></div>
+          <ul class="points"><li><span class="lbl l-problem">Problem:</span>PGD adversarial training is <b>costly</b>.</li><li><span class="lbl l-method">Method:</span>Attack only the <b>most informative samples</b>.</li><li><span class="lbl l-result">Result:</span>Up to <span class="num">50% less</span> adversarial compute.</li></ul>
+          <div class="pfoot"><a class="lnk" href="https://arxiv.org/abs/2512.22069"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm-1 7V3.5L18.5 9zM8 13h8v2H8zm0 4h8v2H8z"/></svg>arXiv</a><span class="sep"></span><span class="ptag hi"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5z"/></svg>Adversarial Robustness</span><span class="ptag">Efficient Training</span><span class="ptag">Data Selection</span></div>
+        </div>
+      </article>
+      <article class="pub">
+        <a class="thumb" href="https://www.researchgate.net/publication/396389408_RGDR_Reward-Guided_Domain_Randomization_for_Autonomous_Driving"><img src="images/RGDR.png" alt="RGDR framework overview" loading="lazy"></a>
+        <div>
+          <h3><a href="https://www.researchgate.net/publication/396389408_RGDR_Reward-Guided_Domain_Randomization_for_Autonomous_Driving">RGDR: Reward-Guided Domain Randomization for Autonomous Driving</a></h3>
+          <p class="authors"><b>Dejin Wang</b>, <a href="https://ghoreishi.lab.northeastern.edu/">Seyede Fatemeh Ghoreishi</a></p>
+          <div class="venue-line"><span class="vbadge">[ITSC]</span><span class="vname">IEEE International Conference on Intelligent Transportation Systems</span><span class="vyear">2025</span></div>
+          <ul class="points"><li><span class="lbl l-problem">Problem:</span>Uniform DR wastes effort on <b>easy environments</b>.</li><li><span class="lbl l-method">Method:</span><b>Reward-weighted KDE</b> targets hard cases.</li><li><span class="lbl l-result">Efficiency:</span><b>Linear</b> cost, cheaper than ADR.</li><li><span class="lbl l-eval">Evaluation:</span>Gym and <b>CARLA</b>.</li></ul>
+          <div class="pfoot"><a class="lnk" href="https://www.researchgate.net/publication/396389408_RGDR_Reward-Guided_Domain_Randomization_for_Autonomous_Driving"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm-1 7V3.5L18.5 9zM8 13h8v2H8zm0 4h8v2H8z"/></svg>Paper</a><a class="lnk" href="https://github.com/dejin-wang/reward_guided_domain_randomization"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>Code</a><span class="sep"></span><span class="ptag hi"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5z"/></svg>Domain Randomization</span><span class="ptag">Zero-Shot Generalization</span><span class="ptag">CARLA</span></div>
+        </div>
+      </article>
+      <article class="pub">
+        <a class="thumb" href="https://www.researchgate.net/publication/394533958_Robust_Reinforcement_Learning_for_Autonomous_Driving_in_Uncertain_Environments"><img src="images/Robust_1.png" alt="Robust RL framework overview" loading="lazy"></a>
+        <div>
+          <h3><a href="https://www.researchgate.net/publication/394533958_Robust_Reinforcement_Learning_for_Autonomous_Driving_in_Uncertain_Environments">Robust Reinforcement Learning for Autonomous Driving in Uncertain Environments</a></h3>
+          <p class="authors"><b>Dejin Wang</b>, <a href="https://ghoreishi.lab.northeastern.edu/">Seyede Fatemeh Ghoreishi</a></p>
+          <div class="venue-line"><span class="vbadge">[CASE]</span><span class="vname">IEEE International Conference on Automation Science and Engineering</span><span class="vyear">2025</span></div>
+          <ul class="points"><li><span class="lbl l-problem">Problem:</span>Fixed-dynamics policies are <b>brittle</b>.</li><li><span class="lbl l-method">Method:</span><b>LSTM-PPO</b> with context-aware rewards.</li><li><span class="lbl l-result">Result:</span><span class="num">Top-2</span> across CARLA conditions, <b>no fine-tuning</b>.</li></ul>
+          <div class="pfoot"><a class="lnk" href="https://www.researchgate.net/publication/394533958_Robust_Reinforcement_Learning_for_Autonomous_Driving_in_Uncertain_Environments"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm-1 7V3.5L18.5 9zM8 13h8v2H8zm0 4h8v2H8z"/></svg>Paper</a><span class="sep"></span><span class="ptag hi"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5z"/></svg>Robust RL</span><span class="ptag">Partial Observability</span><span class="ptag">LSTM-PPO</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <div class="sec-head"><div><p class="eyebrow">Background</p><h2>Education</h2></div></div>
+    <ul class="edu">
+      <li class="now">
+        <div><div class="school">Northeastern University</div><div class="deg">Ph.D. in Interdisciplinary Engineering (in progress)</div><div class="adv">Advisor: <a href="https://ghoreishi.lab.northeastern.edu/">Prof. Seyede Fatemeh Ghoreishi</a></div></div>
+        <div class="loc">Boston, MA, USA</div>
+      </li>
+      <li>
+        <div><div class="school">Nankai University</div><div class="deg">M.S. in Operations Research and Cybernetics</div><div class="adv">Advisor: <a href="https://ai.nankai.edu.cn/info/1033/4287.htm">Prof. Zhongxin Liu</a></div></div>
+        <div class="loc">Tianjin, China</div>
+      </li>
+      <li>
+        <div><div class="school">China University of Geosciences (Wuhan)</div><div class="deg">B.Eng. in Mechanical Engineering</div></div>
+        <div class="loc">Wuhan, China</div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Honors -->
+  <section id="honors">
+    <div class="sec-head"><div><p class="eyebrow">Recognition</p><h2>Honors and Awards</h2></div></div>
+    <ul class="honors">
+      <li><span class="y">2026</span><div><span class="aw">IEEE RAS Travel Support Award</span>, <span class="w">IEEE/RSJ IROS, Pittsburgh, PA</span></div></li>
+      <li><span class="y">2026</span><div><span class="aw">Travel Award</span>, <span class="w">American Control Conference, New Orleans, LA</span></div></li>
+      <li><span class="y">2025</span><div><span class="aw">Travel Award</span>, <span class="w">IEEE CASE, Los Angeles, CA</span></div></li>
+      <li><span class="y">2024–2025</span><div><span class="aw">Civil and Environmental Engineering Fellowship</span>, <span class="w">Northeastern University</span></div></li>
+      <li><span class="y">2022–2023</span><div><span class="aw">China National Scholarship</span><span class="tag">Top 2%</span>, <span class="w">Nankai University</span></div></li>
+      <li><span class="y">2022–2023</span><div><span class="aw">First-Class Graduate Student Scholarship</span>, <span class="w">Nankai University</span></div></li>
+      <li><span class="y">2021</span><div><span class="aw">Graduate Recommended Examination Exemption Scholarship</span>, <span class="w">Nankai University</span></div></li>
+      <li><span class="y">2019–2020</span><div><span class="aw">China National Scholarship</span><span class="tag">Top 1%</span>, <span class="w">China University of Geosciences (Wuhan)</span></div></li>
+      <li><span class="y">2018, 2019, 2020</span><div><span class="aw">Outstanding Student Model (school level)</span>, <span class="w">China University of Geosciences (Wuhan)</span></div></li>
+    </ul>
+  </section>
+
+  <!-- Personal -->
+  <section id="personal">
+    <div class="sec-head"><div><p class="eyebrow">Beyond research</p><h2>Personal Interests</h2></div></div>
+    <div class="tabs" role="tablist">
+      <button role="tab" aria-selected="true" data-panel="p-dragon">Dragon Boat</button>
+      <button role="tab" aria-selected="false" data-panel="p-badminton">Badminton</button>
+      <button role="tab" aria-selected="false" data-panel="p-hiking">Hiking</button>
+    </div>
+    <div class="panel on" id="p-dragon" role="tabpanel">
+      <p>I serve as captain of the Nankaitianda Nantianmen Dragon Boat Team and also paddle with the Boston Storm Dragon Boat Club. The sport demands strength, endurance, and precise team coordination.</p>
+      <div class="photos">
+        <img src="images/dragonboat_1.jpg" alt="Dragon boat team racing" loading="lazy">
+        <img src="images/dragonboat_2.jpg" alt="Dragon boat team" loading="lazy">
+        <img src="images/dragonboat_3.jpg" alt="Dragon boat race" loading="lazy">
+        <img src="images/dragonboat_4.jpg" alt="Dragon boat team photo" loading="lazy">
+      </div>
+    </div>
+    <div class="panel" id="p-badminton" role="tabpanel">
+      <p>I have played competitive badminton, in both singles and doubles, for three years. Selected medals are shown below.</p>
+      <div class="photos">
+        <img src="images/badminton_medal1.jpg" alt="Badminton medal" loading="lazy">
+        <img src="images/badminton_medal21.jpg" alt="Badminton medal" loading="lazy">
+        <img src="images/badminton_medal3.jpg" alt="Badminton medal" loading="lazy">
+        <img src="images/badminton_medal4.jpg" alt="Badminton medal" loading="lazy">
+      </div>
+    </div>
+    <div class="panel" id="p-hiking" role="tabpanel">
+      <p>I hike regularly, particularly in autumn, on mountain, lakeside, and forest trails throughout New England.</p>
+      <div class="photos">
+        <img src="images/hiking_1.jpg" alt="Hiking view" loading="lazy">
+        <img src="images/hiking_2.jpg" alt="Hiking view" loading="lazy">
+        <img src="images/hiking_3.jpg" alt="Hiking view" loading="lazy">
+        <img src="images/hiking_4.jpg" alt="Hiking view" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <div>
+        <h2>Get in touch</h2>
+        <p>For research inquiries or collaboration, please contact me at <a href="mailto:wang.dej@northeastern.edu">wang.dej@northeastern.edu</a>.</p>
+      </div>
+      <div class="acts">
+        <a href="mailto:wang.dej@northeastern.edu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg>Email</a>
+        <a class="ghost" href="assets/dejin.pdf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm-1 7V3.5L18.5 9zM8 13h8v2H8zm0 4h8v2H8z"/></svg>Curriculum Vitae</a>
+      </div>
+    </div>
+  </section>
+  </main>
+</div>
+
+<footer>
+  <span>© 2026 Dejin Wang · Northeastern University, Boston, MA</span>
+  <span>Last updated November 2026</span>
+</footer>
+
+<div class="lb" id="lb"><img alt=""></div>
+
+<script>
+  const root = document.documentElement;
+
+  document.getElementById('themeBtn').addEventListener('click', () => {
+    const dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    root.dataset.theme = dark ? 'light' : 'dark';
+    try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+  });
+
+  const list = document.getElementById('newsList'), more = document.getElementById('moreBtn');
+  more.addEventListener('click', () => {
+    const open = list.classList.toggle('open');
+    more.textContent = open ? 'Show fewer' : 'Show all news';
+  });
+
+  const tabs = document.querySelectorAll('.tabs button');
+  tabs.forEach(b => b.addEventListener('click', () => {
+    tabs.forEach(t => t.setAttribute('aria-selected', t === b));
+    document.querySelectorAll('.panel').forEach(p => p.classList.toggle('on', p.id === b.dataset.panel));
+  }));
+
+  const lb = document.getElementById('lb'), lbImg = lb.querySelector('img');
+  document.querySelectorAll('.photos img').forEach(img => img.addEventListener('click', () => {
+    lbImg.src = img.src; lbImg.alt = img.alt; lb.classList.add('on');
+  }));
+  lb.addEventListener('click', () => lb.classList.remove('on'));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') lb.classList.remove('on'); });
+
+  const links = [...document.querySelectorAll('.nav a.l')];
+  const secs = links.map(a => document.querySelector(a.getAttribute('href')));
+  addEventListener('scroll', () => {
+    let i = -1;
+    secs.forEach((s, k) => { if (s && s.getBoundingClientRect().top < 140) i = k; });
+    links.forEach((a, k) => a.classList.toggle('active', k === i));
+  }, { passive: true });
+</script>
+</body>
+</html>

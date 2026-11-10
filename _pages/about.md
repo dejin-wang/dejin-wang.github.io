@@ -1,9 +1,6 @@
 ---
-permalink: /
+permalink: /about/
 author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
 ---
 
 Hi, I am Dejin. You may call me Saul, or simply DJ.  I’m a **Third-year Ph.D. candidate in Interdisciplinary Engineering** at **[Northeastern University](https://www.northeastern.edu/)**, advised by **[Prof. Fatemeh Ghoreishi](https://ghoreishi.lab.northeastern.edu/)**. I completed my **B.Eng. in Mechanical Engineering** at the **[China University of Geosciences (Wuhan)](https://en.cug.edu.cn/)** and my **M.S. in Operations Research and Cybernetics** at **[Nankai University](https://en.nankai.edu.cn/)**, where I worked with **[Prof. Zhongxin Liu](https://ai.nankai.edu.cn/info/1033/4287.htm)**. 

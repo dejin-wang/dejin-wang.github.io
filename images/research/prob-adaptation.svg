@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="300" viewBox="0 0 480 300" font-family="Inter, Segoe UI, Arial, sans-serif">
+  <rect width="480" height="300" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8a8f96"/></marker></defs>
+  <text x="24" y="34" font-size="11" font-weight="600" letter-spacing="1.2" fill="#a6192e">PROBABILISTIC POLICY COMBINATION</text>
+  <g font-size="12" font-weight="600">
+    <rect x="24" y="62" width="120" height="44" rx="6" fill="#f3f3f0" stroke="#c9c9c4"/><text x="38" y="82" fill="#1f2a44">Policy · Env A</text><text x="38" y="98" font-size="10" font-weight="400" fill="#555a60">pre-trained</text>
+    <rect x="24" y="128" width="120" height="44" rx="6" fill="#f3f3f0" stroke="#c9c9c4"/><text x="38" y="148" fill="#1f2a44">Policy · Env B</text><text x="38" y="164" font-size="10" font-weight="400" fill="#555a60">pre-trained</text>
+    <rect x="24" y="194" width="120" height="44" rx="6" fill="#f3f3f0" stroke="#c9c9c4"/><text x="38" y="214" fill="#1f2a44">Policy · Env C</text><text x="38" y="230" font-size="10" font-weight="400" fill="#555a60">pre-trained</text>
+  </g>
+  <g font-size="10" fill="#555a60">
+    <rect x="152" y="77" width="44" height="14" rx="2" fill="#a6192e" opacity=".2"/><rect x="152" y="77" width="10" height="14" rx="2" fill="#a6192e"/><text x="202" y="88">w₁</text>
+    <rect x="152" y="143" width="44" height="14" rx="2" fill="#a6192e" opacity=".2"/><rect x="152" y="143" width="32" height="14" rx="2" fill="#a6192e"/><text x="202" y="154">w₂</text>
+    <rect x="152" y="209" width="44" height="14" rx="2" fill="#a6192e" opacity=".2"/><rect x="152" y="209" width="8" height="14" rx="2" fill="#a6192e"/><text x="202" y="220">w₃</text>
+  </g>
+  <g stroke="#8a8f96" stroke-width="1.5" fill="none"><path d="M222 84 C 250 84, 250 150, 276 150" marker-end="url(#a)"/><path d="M222 150 H276" marker-end="url(#a)"/><path d="M222 216 C 250 216, 250 150, 276 150" marker-end="url(#a)"/></g>
+  <circle cx="306" cy="150" r="26" fill="#1f2a44"/><text x="306" y="157" text-anchor="middle" font-size="20" fill="#fff">Σ</text>
+  <path d="M334 150 H366" stroke="#8a8f96" stroke-width="1.5" marker-end="url(#a)"/>
+  <g transform="translate(372 126)">
+    <rect x="0" y="14" width="84" height="26" rx="8" fill="#a6192e"/>
+    <path d="M16 14 L28 2 H58 L70 14z" fill="#a6192e"/>
+    <path d="M24 13 L31 6 H42 V13z M46 6 H56 L63 13 H46z" fill="#fff" opacity=".8"/>
+    <circle cx="20" cy="42" r="8" fill="#1f2a44"/><circle cx="64" cy="42" r="8" fill="#1f2a44"/>
+  </g>
+  <text x="414" y="196" text-anchor="middle" font-size="10.5" fill="#555a60">adaptive decision</text>
+  <text x="24" y="270" font-size="10.5" fill="#555a60">weights = how well the current environment matches each policy</text>
+</svg>

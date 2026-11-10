@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="300" viewBox="0 0 480 300" font-family="Inter, Segoe UI, Arial, sans-serif">
+  <rect width="480" height="300" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8a8f96"/></marker></defs>
+  <text x="18" y="34" font-size="11" font-weight="600" letter-spacing="1.2" fill="#a6192e">TEACHER → STUDENT STYLE INFERENCE</text>
+  <rect x="18" y="58" width="104" height="60" rx="6" fill="#f3f3f0" stroke="#1f2a44" stroke-width="1.5"/>
+  <text x="70" y="84" text-anchor="middle" font-size="13" font-weight="600" fill="#1f2a44">PPO Teacher</text>
+  <text x="70" y="102" text-anchor="middle" font-size="10.5" fill="#555a60">style-conditioned</text>
+  <path d="M70 118 V150" stroke="#8a8f96" stroke-width="1.5" marker-end="url(#a)"/>
+  <g fill="none" stroke-width="2" stroke-linecap="round">
+    <path d="M22 196 C 50 160, 80 210, 118 170" stroke="#a6192e"/>
+    <path d="M22 210 C 55 190, 85 220, 118 196" stroke="#1f2a44" opacity=".7"/>
+    <path d="M22 224 C 50 220, 90 236, 118 220" stroke="#8a8f96"/>
+  </g>
+  <text x="70" y="252" text-anchor="middle" font-size="10.5" fill="#555a60">state-only windows</text>
+  <path d="M124 196 H146" stroke="#8a8f96" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="150" y="150" width="104" height="92" rx="6" fill="#1f2a44"/>
+  <text x="202" y="180" text-anchor="middle" font-size="12.5" font-weight="600" fill="#fff">Probabilistic</text>
+  <text x="202" y="197" text-anchor="middle" font-size="12.5" font-weight="600" fill="#fff">Transformer</text>
+  <g fill="#ffffff" opacity=".55"><rect x="166" y="212" width="14" height="14" rx="2"/><rect x="184" y="212" width="14" height="14" rx="2"/><rect x="202" y="212" width="14" height="14" rx="2"/><rect x="220" y="212" width="14" height="14" rx="2"/></g>
+  <path d="M258 196 H272" stroke="#8a8f96" stroke-width="1.5" marker-end="url(#a)"/>
+  <g transform="translate(374 150)">
+    <g transform="scale(.8)">
+      <g fill="none" stroke="#e3e3df">
+        <polygon points="0,-70 60.6,-35 60.6,35 0,70 -60.6,35 -60.6,-35"/>
+        <polygon points="0,-46 39.8,-23 39.8,23 0,46 -39.8,23 -39.8,-23"/>
+        <path d="M0 -70V70M-60.6 -35L60.6 35M60.6 -35L-60.6 35"/>
+      </g>
+      <polygon points="0,-62 52,-30 44,25 0,60 -36,21 -50,-29" fill="#a6192e" opacity=".12"/>
+      <polygon points="0,-40 34,-20 26,15 0,38 -22,13 -32,-18" fill="#ffffff"/>
+      <polygon points="0,-52 43,-25 35,20 0,49 -29,17 -41,-24" fill="none" stroke="#a6192e" stroke-width="2.4"/>
+      <g fill="#a6192e"><circle cx="0" cy="-52" r="3.6"/><circle cx="43" cy="-25" r="3.6"/><circle cx="35" cy="20" r="3.6"/><circle cx="0" cy="49" r="3.6"/><circle cx="-29" cy="17" r="3.6"/><circle cx="-41" cy="-24" r="3.6"/></g>
+    </g>
+    <g font-size="10" fill="#1f2a44">
+      <text x="0" y="-62" text-anchor="middle">Aggressive</text>
+      <text x="52" y="-30" text-anchor="start">Impulsive</text>
+      <text x="52" y="38" text-anchor="start">Risk</text>
+      <text x="0" y="72" text-anchor="middle">Rule conf.</text>
+      <text x="-52" y="38" text-anchor="end">Prospect.</text>
+      <text x="-52" y="-30" text-anchor="end">Expert</text>
+    </g>
+  </g>
+  <text x="374" y="252" text-anchor="middle" font-size="10.5" fill="#555a60">6 traits + uncertainty band</text>
+</svg>

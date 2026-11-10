@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="300" viewBox="0 0 480 300" font-family="Inter, Segoe UI, Arial, sans-serif">
+  <rect width="480" height="300" fill="#ffffff"/>
+  <text x="24" y="34" font-size="11" font-weight="600" letter-spacing="1.2" fill="#a6192e">SELECTIVE ADVERSARIAL TRAINING</text>
+  <rect x="24" y="52" width="300" height="220" rx="6" fill="#fafaf8" stroke="#e3e3df"/>
+  <path d="M40 260 C 120 230, 150 120, 310 70" fill="none" stroke="#1f2a44" stroke-width="2"/>
+  <text x="236" y="66" font-size="10" fill="#1f2a44">decision boundary</text>
+  <g fill="#c9ccd1"><circle cx="58" cy="90" r="6"/><circle cx="90" cy="78" r="6"/><circle cx="70" cy="130" r="6"/><circle cx="110" cy="112" r="6"/><circle cx="52" cy="176" r="6"/><circle cx="150" cy="86" r="6"/><circle cx="92" cy="166" r="6"/><circle cx="186" cy="80" r="6"/></g>
+  <g fill="#c9ccd1"><rect x="250" y="190" width="12" height="12"/><rect x="290" y="150" width="12" height="12"/><rect x="220" y="236" width="12" height="12"/><rect x="278" y="226" width="12" height="12"/><rect x="300" y="110" width="12" height="12"/><rect x="180" y="244" width="12" height="12"/><rect x="260" y="130" width="12" height="12"/></g>
+  <g fill="#a6192e"><circle cx="128" cy="178" r="6.5"/><circle cx="160" cy="138" r="6.5"/><circle cx="212" cy="102" r="6.5"/><rect x="172" y="174" width="13" height="13"/><rect x="218" y="134" width="13" height="13"/><rect x="132" y="216" width="13" height="13"/></g>
+  <g fill="none" stroke="#a6192e" stroke-width="1.2" stroke-dasharray="2 2"><circle cx="128" cy="178" r="12"/><circle cx="160" cy="138" r="12"/><circle cx="212" cy="102" r="12"/><circle cx="178" cy="180" r="12"/><circle cx="224" cy="140" r="12"/><circle cx="138" cy="222" r="12"/></g>
+  <g font-size="11">
+    <circle cx="350" cy="92" r="6.5" fill="#a6192e"/><text x="364" y="96" fill="#1a1a1a" font-weight="600">selected</text><text x="364" y="111" fill="#555a60" font-size="10">PGD attack applied</text>
+    <circle cx="350" cy="140" r="6" fill="#c9ccd1"/><text x="364" y="144" fill="#1a1a1a" font-weight="600">clean</text><text x="364" y="159" fill="#555a60" font-size="10">standard training</text>
+  </g>
+  <rect x="342" y="190" width="118" height="60" rx="6" fill="#f6e8ea"/>
+  <text x="401" y="216" text-anchor="middle" font-size="18" font-weight="700" fill="#a6192e">up to 50%</text>
+  <text x="401" y="236" text-anchor="middle" font-size="10" fill="#a6192e">less adversarial compute</text>
+</svg>
