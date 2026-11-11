@@ -13,8 +13,7 @@
 <meta property="og:description" content="Robust reinforcement learning for autonomous driving · Open to Ph.D. research internships.">
 <meta property="og:image" content="https://dejin-wang.github.io/images/profile.jpg">
 <meta name="twitter:card" content="summary">
-<meta name="theme-color" media="(prefers-color-scheme: light)" content="#fbfbf9">
-<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0d0f13">
+<meta name="theme-color" content="#fbfbf9">
 <link rel="icon" href="images/favicon-dw-32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="images/favicon-dw.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="images/apple-touch-icon-dw.png">
@@ -22,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Kaushan+Script&display=swap" rel="stylesheet">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Dejin Wang", "alternateName": "Saul", "url": "https://dejin-wang.github.io/", "image": "https://dejin-wang.github.io/images/profile.jpg", "email": "mailto:wang.dej@northeastern.edu", "jobTitle": "Ph.D. Candidate", "affiliation": {"@type": "CollegeOrUniversity", "name": "Northeastern University", "url": "https://www.northeastern.edu/"}, "alumniOf": [{"@type": "CollegeOrUniversity", "name": "Nankai University"}, {"@type": "CollegeOrUniversity", "name": "China University of Geosciences (Wuhan)"}], "knowsAbout": ["Reinforcement learning", "Autonomous driving", "Driving-style modeling", "Domain randomization", "Sim-to-real transfer", "Unsupervised skill discovery", "Diffusion models", "Physical AI"], "sameAs": ["https://scholar.google.com/citations?user=2vMnqO4AAAAJ&hl=en", "https://github.com/dejin-wang", "https://www.linkedin.com/in/dejin-saul-wang-a462b2299/", "https://www.researchgate.net/profile/Wang-Dejin"]}</script>
-<script>try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+<script>document.documentElement.classList.add('js'); try { if (localStorage.getItem('theme') === 'eye') document.documentElement.dataset.theme = 'eye'; } catch (e) {}</script>
 <style>
   :root { color-scheme: light;
     --bg: #fbfbf9; --card: #ffffff; --surface: #f3f3ef; --text: #15171c; --muted: #50555d; --faint: #858a92;
@@ -34,39 +33,29 @@
     --btn-bg: #1b2540; --btn-fg: #ffffff; --btn-line: #1b2540;
     --hero-a: #1f2a48; --hero-b: #141b30;
     --solid-bg: #935d00; --solid-fg: #ffffff; --tab-bg: #0e7c72; --tab-fg: #ffffff;
-    --thumb-filter: none; --photo-filter: none; --bg-glow: none; --sun: none; --moon: block; --poster-filter: none;
+    --thumb-filter: none; --photo-filter: none; --bg-glow: none; --sun: none; --moon: block; --poster-filter: none; --band-1: radial-gradient(1100px 520px at 88% -12%, rgba(36,89,179,.17), transparent 62%), radial-gradient(820px 480px at -8% 50%, rgba(180,35,60,.10), transparent 60%), linear-gradient(#eef3fc, #f6f4fb); --band-2: linear-gradient(180deg, #fdf6ea, #fbf2e3); --ring-2: #fcf4e6; --band-3: linear-gradient(180deg, #f1f5fb, #edf2fa); --band-4: linear-gradient(100deg, #f4f0fc 0%, #f8f3f6 50%, #fcf5e8 100%); --band-5: linear-gradient(180deg, #edf7f3, #f3f8f0);
     --shadow: 0 1px 2px rgba(16,20,34,.05), 0 6px 20px -8px rgba(16,20,34,.14);
     --shadow-lg: 0 2px 6px rgba(16,20,34,.06), 0 18px 40px -18px rgba(16,20,34,.30); }
-  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { color-scheme: dark;
-    --bg: #0d0f13; --card: #14171c; --surface: #1a1e24; --text: #e6e8ec; --muted: #a3a9b4; --faint: #767d88;
-    --line: #242930; --line-2: #343a43;
-    --head: #eef1f8; --brand: #f0788b; --link: #8fb4f6; --title: #8fb4f6; --coauthor: #a7c2f2; --badge-bg: #1e2229;
-    --c-red: #ee8a9a; --c-red-bg: #2a1c21; --c-amber: #e2bd78; --c-amber-bg: #29231a; --c-green: #a5cf8c; --c-green-bg: #1b2619;
-    --c-teal: #72c6ba; --c-teal-bg: #142628; --c-blue: #8fb4f6; --c-blue-bg: #18212f; --c-violet: #b6aaf0; --c-violet-bg: #201d2f;
-    --tag-line: #33405a; --tag-text: #aabbdd;
-    --btn-bg: #1d2740; --btn-fg: #eef2fb; --btn-line: #2f3c5a;
-    --hero-a: #182239; --hero-b: #10151f;
-    --solid-bg: #29231a; --solid-fg: #e2bd78; --tab-bg: #142628; --tab-fg: #72c6ba;
-    --thumb-filter: brightness(.86) contrast(1.03); --photo-filter: brightness(.9);
-    --bg-glow: radial-gradient(1100px 520px at 78% -8%, rgba(143,180,246,.07), transparent 62%), radial-gradient(900px 480px at -10% 32%, rgba(238,138,154,.045), transparent 60%);
-    --sun: block; --moon: none; --poster-filter: brightness(.9) saturate(.92);
-    --shadow: 0 1px 2px rgba(0,0,0,.45), 0 8px 24px -12px rgba(0,0,0,.7);
-    --shadow-lg: 0 2px 6px rgba(0,0,0,.5), 0 22px 44px -20px rgba(0,0,0,.85); } }
-  :root[data-theme="dark"] { color-scheme: dark;
-    --bg: #0d0f13; --card: #14171c; --surface: #1a1e24; --text: #e6e8ec; --muted: #a3a9b4; --faint: #767d88;
-    --line: #242930; --line-2: #343a43;
-    --head: #eef1f8; --brand: #f0788b; --link: #8fb4f6; --title: #8fb4f6; --coauthor: #a7c2f2; --badge-bg: #1e2229;
-    --c-red: #ee8a9a; --c-red-bg: #2a1c21; --c-amber: #e2bd78; --c-amber-bg: #29231a; --c-green: #a5cf8c; --c-green-bg: #1b2619;
-    --c-teal: #72c6ba; --c-teal-bg: #142628; --c-blue: #8fb4f6; --c-blue-bg: #18212f; --c-violet: #b6aaf0; --c-violet-bg: #201d2f;
-    --tag-line: #33405a; --tag-text: #aabbdd;
-    --btn-bg: #1d2740; --btn-fg: #eef2fb; --btn-line: #2f3c5a;
-    --hero-a: #182239; --hero-b: #10151f;
-    --solid-bg: #29231a; --solid-fg: #e2bd78; --tab-bg: #142628; --tab-fg: #72c6ba;
-    --thumb-filter: brightness(.86) contrast(1.03); --photo-filter: brightness(.9);
-    --bg-glow: radial-gradient(1100px 520px at 78% -8%, rgba(143,180,246,.07), transparent 62%), radial-gradient(900px 480px at -10% 32%, rgba(238,138,154,.045), transparent 60%);
-    --sun: block; --moon: none; --poster-filter: brightness(.9) saturate(.92);
-    --shadow: 0 1px 2px rgba(0,0,0,.45), 0 8px 24px -12px rgba(0,0,0,.7);
-    --shadow-lg: 0 2px 6px rgba(0,0,0,.5), 0 22px 44px -20px rgba(0,0,0,.85); }
+  /* Eye-care mode: warm paper tones, lower glare and less blue light */
+  :root[data-theme="eye"] { color-scheme: light;
+    --bg: #f2eadb; --card: #f8f2e6; --surface: #ece2cf; --text: #3a3226; --muted: #6a5e4c; --faint: #8a7c65;
+    --line: #e0d4bc; --line-2: #d2c4a8;
+    --head: #3b2f20; --brand: #a3432f; --link: #3a6189; --title: #345d86; --coauthor: #4e7093; --badge-bg: #e8dcc5;
+    --c-red: #a5452f; --c-red-bg: #f0ddcd; --c-amber: #87590f; --c-amber-bg: #efe1c1; --c-green: #4a6c2a; --c-green-bg: #e2e6c8;
+    --c-teal: #2f6b61; --c-teal-bg: #d9e5d5; --c-blue: #3a6189; --c-blue-bg: #e0e2dc; --c-violet: #6a5391; --c-violet-bg: #e7dde2;
+    --tag-line: #cdbfa3; --tag-text: #5e5443;
+    --btn-bg: #4a3b28; --btn-fg: #f8f2e6; --btn-line: #4a3b28;
+    --hero-a: #4a3b28; --hero-b: #3a2e20;
+    --solid-bg: #87590f; --solid-fg: #f8f2e6; --tab-bg: #2f6b61; --tab-fg: #f8f2e6;
+    --thumb-filter: sepia(.12) brightness(.97); --photo-filter: sepia(.1) brightness(.98); --poster-filter: sepia(.12) brightness(.96);
+    --bg-glow: none; --sun: block; --moon: none;
+    --band-1: radial-gradient(1100px 520px at 88% -12%, rgba(150,110,50,.10), transparent 62%), radial-gradient(820px 480px at -8% 50%, rgba(165,69,47,.07), transparent 60%), linear-gradient(#efe5d1, #f2eadb);
+    --band-2: linear-gradient(180deg, #f1e3c6, #efdfbf); --ring-2: #f0e1c3;
+    --band-3: linear-gradient(180deg, #ebe6d3, #e8e3cf);
+    --band-4: linear-gradient(100deg, #ebe1d6 0%, #eee4d3 50%, #f1e2c4 100%);
+    --band-5: linear-gradient(180deg, #e5e7cf, #e9e8d0);
+    --shadow: 0 1px 2px rgba(80,60,30,.06), 0 6px 20px -8px rgba(80,60,30,.16);
+    --shadow-lg: 0 2px 6px rgba(80,60,30,.07), 0 18px 40px -18px rgba(80,60,30,.28); }
 
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; scroll-padding-top: 84px; }
@@ -87,18 +76,27 @@
   .brand:hover { text-decoration: none; }
   .brand span { color: var(--brand); }
   .nav-links { position: relative; display: flex; align-items: center; gap: 2px; }
-  .nav a.l { position: relative; color: var(--muted); font-size: .875rem; font-weight: 500; padding: 8px 12px; border-radius: 6px; white-space: nowrap; }
-  .nav a.l:hover { color: var(--text); background: var(--surface); text-decoration: none; }
-  .nav a.l.active { color: var(--brand); }
-  .nav a.l.active::after { content: ""; position: absolute; left: 12px; right: 12px; bottom: 2px; height: 2px; border-radius: 2px; background: var(--brand); }
-  .theme-btn { margin-left: 10px; width: 34px; height: 34px; flex: none; display: grid; place-items: center; border-radius: 8px; border: 1px solid var(--line); background: var(--card); color: var(--muted); cursor: pointer; }
+  /* each link carries its section colour (same as the section's eyebrow label) */
+  .nav a.l { --nc: var(--c-blue); position: relative; display: inline-flex; align-items: center; gap: 7px; color: var(--muted); font-size: .875rem; font-weight: 500; padding: 7px 13px 7px 11px; border-radius: 999px; white-space: nowrap; transition: color .15s, background-color .15s, box-shadow .15s; }
+  .nav a.l svg { width: 15px; height: 15px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; color: var(--nc); opacity: .85; transition: opacity .15s, transform .2s; }
+  .nav a.l[href="#about"] { --nc: var(--c-red); }
+  .nav a.l[href="#news"] { --nc: var(--c-blue); }
+  .nav a.l[href="#research"] { --nc: var(--c-teal); }
+  .nav a.l[href="#education"] { --nc: var(--c-violet); }
+  .nav a.l[href="#honors"] { --nc: var(--c-amber); }
+  .nav a.l[href="#personal"] { --nc: var(--c-green); }
+  .nav a.l:hover { color: var(--nc); background: var(--surface); background: color-mix(in srgb, var(--nc) 9%, transparent); text-decoration: none; }
+  .nav a.l:hover svg { opacity: 1; transform: translateY(-1px); }
+  .nav a.l.active { color: var(--nc); background: var(--surface); background: color-mix(in srgb, var(--nc) 13%, transparent); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--nc) 24%, transparent); }
+  .nav a.l.active svg { opacity: 1; }
+  .theme-btn { margin-left: 10px; width: 34px; height: 34px; flex: none; display: grid; place-items: center; border-radius: 50%; border: 1px solid var(--line); background: var(--card); color: var(--muted); cursor: pointer; }
   .theme-btn:hover { color: var(--text); border-color: var(--line-2); }
   .theme-btn svg { width: 16px; height: 16px; }
   .theme-btn .sun { display: var(--sun); }
   .theme-btn .moon { display: var(--moon); }
 
   /* ---------- Layout ---------- */
-  .page { max-width: 1200px; margin: 0 auto; padding: 48px 32px 0; }
+  .page { overflow-x: clip; }
   .top-row { display: grid; grid-template-columns: 290px minmax(0, 1fr); gap: 0 64px; align-items: start; }
   .news-row { display: grid; grid-template-columns: 318px minmax(0, 1fr); gap: 0 36px; align-items: start; }
   .pair-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0 48px; align-items: stretch; }
@@ -155,13 +153,19 @@
   .poster-col img:hover, .poster-col img:focus-visible { transform: scale(1.02); }
   .poster-col figcaption { margin-top: 10px; font-size: .86rem; color: var(--muted); }
   .poster-col figcaption a { font-weight: 600; }
-  .band { padding: 0 0 52px; margin: 0 0 52px; border-bottom: 1px solid var(--line); }
-  .band:last-child { border-bottom: 0; margin-bottom: 0; padding-bottom: 0; }
+  .band { position: relative; isolation: isolate; max-width: 1200px; margin: 0 auto; padding: 60px 32px; }
+  .band::before { content: ""; position: absolute; z-index: -1; top: 0; bottom: 0; left: -100vmax; right: -100vmax; background: var(--band-bg, transparent); }
+  .top-row { --band-bg: var(--band-1); padding-top: 48px; }
+  .news-row { --band-bg: var(--band-2); --ring: var(--ring-2); }
+  .band-research { --band-bg: var(--band-3); }
+  .pair-row { --band-bg: var(--band-4); }
+  .band-personal { --band-bg: var(--band-5); padding-bottom: 72px; }
   section { margin: 0; }
   .sec-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 28px; }
   .eyebrow { margin: 0 0 6px; font-size: .74rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--c-red); }
   #news .eyebrow { color: var(--c-blue); }
-  #research .eyebrow, #personal .eyebrow { color: var(--c-teal); }
+  #research .eyebrow { color: var(--c-teal); }
+  #personal .eyebrow { color: var(--c-green); }
   #education .eyebrow { color: var(--c-violet); }
   #honors .eyebrow { color: var(--c-amber); }
   .sec-head h2 { font-size: 2rem; font-weight: 600; line-height: 1.1; margin: 0; letter-spacing: -.01em; }
@@ -206,7 +210,7 @@
   .news::before { content: ""; position: absolute; left: 103.5px; top: 8px; bottom: 8px; width: 1px; background: var(--line); }
   .news li { position: relative; display: grid; grid-template-columns: 70px 32px minmax(0, 1fr); gap: 0 14px; align-items: start; padding: 10px 0; font-size: .95rem; }
   .news time { font-size: .8rem; font-weight: 700; font-variant-numeric: tabular-nums; padding-top: 6px; text-align: right; letter-spacing: .02em; color: var(--c-red); }
-  .news .emo { --ico: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z'/%3E%3Cpath d='M14 3v5h5M9 13h6M9 17h4'/%3E%3C/svg%3E"); position: relative; z-index: 1; width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; font-size: .95rem; line-height: 1; color: var(--c-red); background: var(--c-red-bg); box-shadow: 0 0 0 4px var(--bg); }
+  .news .emo { --ico: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z'/%3E%3Cpath d='M14 3v5h5M9 13h6M9 17h4'/%3E%3C/svg%3E"); position: relative; z-index: 1; width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; font-size: .95rem; line-height: 1; color: var(--c-red); background: var(--c-red-bg); box-shadow: 0 0 0 4px var(--ring, var(--bg)); }
   .news .emo:empty::before { content: ""; width: 15px; height: 15px; background: currentColor; -webkit-mask: var(--ico) center / contain no-repeat; mask: var(--ico) center / contain no-repeat; }
   .news li:has(.kind.award) time, .news li:has(.kind.award) .emo { color: var(--c-amber); }
   .news li:has(.kind.award) .emo { --ico: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 4h10v5a5 5 0 0 1-10 0z'/%3E%3Cpath d='M7 6H4.5a2.5 2.5 0 0 0 2.6 4M17 6h2.5a2.5 2.5 0 0 1-2.6 4M12 14v3.5M8.5 21h7M9.5 17.5h5'/%3E%3C/svg%3E"); background: var(--c-amber-bg); }
@@ -315,7 +319,7 @@
 
   /* Contact */
 
-  footer { max-width: 1200px; margin: 64px auto 0; padding: 26px 32px 40px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; color: var(--faint); font-size: .82rem; }
+  footer { max-width: 1200px; margin: 0 auto; padding: 26px 32px 40px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; color: var(--faint); font-size: .82rem; }
 
   /* Photo viewer */
   .lb { position: fixed; inset: 0; z-index: 60; display: none; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 24px 72px; background: rgba(8,10,16,.92); backdrop-filter: blur(4px); }
@@ -340,7 +344,7 @@
 
   /* ---------- Responsive ---------- */
   @media (max-width: 1000px) {
-    .page { padding-top: 32px; }
+    .top-row { padding-top: 32px; }
     .top-row, .news-row, .pair-row { grid-template-columns: minmax(0, 1fr); }
     .pair-row > section + section { margin-top: 44px; }
     .pair-row > #honors, .news-row > #news { display: block; }
@@ -362,16 +366,22 @@
     .socials, .contact-list, .cv-btn { grid-column: 1 / -1; }
     .contact-list { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
   }
-  @media (max-width: 720px) {
+  /* Tablets and phones: the links get their own row under the name (it scrolls sideways when needed) */
+  @media (max-width: 880px) {
     html { scroll-padding-top: 118px; }
-    .nav .in { flex-wrap: wrap; min-height: 0; padding: 10px 16px 0; row-gap: 4px; }
-    .nav-links { order: 3; flex: 1 0 100%; overflow-x: auto; scrollbar-width: none; margin: 0 -16px; padding: 0 10px 8px; }
+    .nav .in { flex-wrap: wrap; min-height: 0; padding: 10px 32px 0; row-gap: 4px; }
+    .nav-links { order: 3; flex: 1 0 100%; overflow-x: auto; scrollbar-width: none; margin: 0 -32px; padding: 0 26px 8px; }
     .nav-links::-webkit-scrollbar { display: none; }
-    .page { padding: 24px 16px 0; }
+  }
+  @media (max-width: 720px) {
+    .nav .in { padding: 10px 16px 0; }
+    .nav-links { margin: 0 -16px; padding: 0 10px 8px; }
+    .band.top-row { padding-top: 24px; }
     .side { grid-template-columns: 96px minmax(0, 1fr); gap: 0 16px; }
     .side h1 { font-size: 1.55rem; }
     .contact-list { grid-template-columns: 1fr; }
-    .band { padding-bottom: 40px; margin-bottom: 40px; }
+    .band { padding: 40px 16px; }
+    .band-personal { padding-bottom: 52px; }
     .sec-head { flex-direction: column; align-items: flex-start; gap: 4px; }
     .sec-head h2 { font-size: 1.7rem; }
     .interests { grid-template-columns: 1fr; gap: 8px; }
@@ -413,22 +423,41 @@
   @media (min-width: 1750px) { body { zoom: 1.18; } }
   @media (min-width: 2050px) { body { zoom: 1.3; } }
   @media (min-width: 2400px) { body { zoom: 1.38; } }
+  /* Gentle rise-in as content scrolls into view */
+  @keyframes rise { from { opacity: 0; translate: 0 18px; } to { opacity: 1; translate: 0 0; } }
+  .js :is(.sec-head, .interests li, .poster-col figure, .pubs .pub, .edu li, .pair-row .honors, .photos img) { opacity: 0; }
+  .js :is(.sec-head, .interests li, .poster-col figure, .pubs .pub, .edu li, .pair-row .honors, .photos img).in { opacity: 1; animation: rise .7s cubic-bezier(.2, .7, .2, 1) both; animation-delay: var(--d, 0s); }
+  @media (prefers-reduced-motion: reduce) { .js :is(.sec-head, .interests li, .poster-col figure, .pubs .pub, .edu li, .pair-row .honors, .photos img) { opacity: 1; } }
 </style>
 </head>
 <body>
+<script>
+  (function () {
+    var root = document.documentElement, DESIGN = 1440, MAX = 2;
+    function fit() {
+      var w = root.clientWidth, z = w > DESIGN ? Math.min(w / DESIGN, MAX) : 1;
+      document.body.style.zoom = z > 1 ? z : '';
+      root.style.scrollPaddingTop = z > 1 ? Math.round(84 * z) + 'px' : '';   // keep anchors clear of the taller nav
+      var lb = document.getElementById('lb'); if (lb) lb.style.zoom = z > 1 ? 1 / z : '';   // photo viewer stays screen-sized
+    }
+    fit();
+    addEventListener('resize', fit);
+    document.addEventListener('DOMContentLoaded', fit);
+  })();
+</script>
 
 <nav class="nav" aria-label="Main">
   <div class="in">
     <a class="brand" href="#about">Dejin Wang<span>.</span></a>
     <div class="nav-links">
-      <a class="l" href="#about">About</a>
-      <a class="l" href="#news">News</a>
-      <a class="l" href="#research">Research</a>
-      <a class="l" href="#education">Education</a>
-      <a class="l" href="#honors">Honors</a>
-      <a class="l" href="#personal">Personal</a>
+      <a class="l" href="#about"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.6"/><path d="M5 20c.8-3.6 3.6-5.6 7-5.6s6.2 2 7 5.6"/></svg>About</a>
+      <a class="l" href="#news"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h12v14H6a2 2 0 0 1-2-2z"/><path d="M16 8h4v9a2 2 0 0 1-2 2"/><path d="M7.5 9h5M7.5 12.5h5M7.5 16h3"/></svg>News</a>
+      <a class="l" href="#research"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 3h5M10.5 3v6.2L5.2 18.4A1.7 1.7 0 0 0 6.7 21h10.6a1.7 1.7 0 0 0 1.5-2.6L13.5 9.2V3"/><path d="M7.6 15h8.8"/></svg>Research</a>
+      <a class="l" href="#education"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 4 10 5-10 5L2 9z"/><path d="M6 11.2V16c1.8 1.4 3.8 2.1 6 2.1s4.2-.7 6-2.1v-4.8M22 9v5"/></svg>Education</a>
+      <a class="l" href="#honors"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="m8.7 13-1.4 8 4.7-2.6 4.7 2.6-1.4-8"/></svg>Honors</a>
+      <a class="l" href="#personal"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.2-4.5-7.2-10.1A4 4 0 0 1 12 7.4a4 4 0 0 1 7.2 2.5C19.2 15.5 12 20 12 20z"/></svg>Personal</a>
     </div>
-    <button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle dark mode"><svg class="s moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.6A8.2 8.2 0 1 1 9.4 4a6.6 6.6 0 0 0 10.6 10.6z"/></svg><svg class="s sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.6v2.1M12 19.3v2.1M4.7 4.7l1.5 1.5M17.8 17.8l1.5 1.5M2.6 12h2.1M19.3 12h2.1M4.7 19.3l1.5-1.5M17.8 6.2l1.5-1.5"/></svg></button>
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch to eye-care mode"><svg class="s moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg><svg class="s sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.6v2.1M12 19.3v2.1M4.7 4.7l1.5 1.5M17.8 17.8l1.5 1.5M2.6 12h2.1M19.3 12h2.1M4.7 19.3l1.5-1.5M17.8 6.2l1.5-1.5"/></svg></button>
   </div>
 </nav>
 
@@ -509,12 +538,13 @@
         Emphasis: <b>bold navy</b> for venues, <i>italic</i> for journal names,
         <span class="num">red</span> for achievements (e.g. Best Paper, oral).
       -->
+      <li><time>Nov 2026</time><span class="emo"></span><div class="txt"><span class="kind talk">Poster</span>Presented the poster “SRDR: Smoothed Return-Guided Domain Randomization for Stable and Robust Policy Learning” at CEE Industry Night, Northeastern University.</div></li>
       <li class="pub"><time>Nov 2026</time><span class="emo"></span><div class="txt"><span class="kind">Paper</span>Paper accepted to <i>IEEE Transactions on Vehicular Technology</i>.</div></li>
       <li><time>Jun 2026</time><span class="emo"></span><div class="txt"><span class="kind award">Award</span>Received the IEEE RAS Travel Support Award for <b>IEEE/RSJ IROS 2026</b>, Pittsburgh, PA.</div></li>
       <li class="pub"><time>Jun 2026</time><span class="emo"></span><div class="txt"><span class="kind">Paper</span>Paper accepted to <b>IEEE/RSJ IROS 2026</b>.</div></li>
       <li><time>Jun 2026</time><span class="emo"></span><div class="txt"><span class="kind life">Team</span>As captain, led the Nantianmen Dragon Boat Team to a <span class="num">bronze medal</span> in the Division C Major category at the Boston Dragon Boat Festival.</div></li>
       <li class="pub"><time>Jun 2026</time><span class="emo"></span><div class="txt"><span class="kind">Paper</span><span class="num">First journal paper</span> accepted to the <i>International Journal of Intelligent Transportation Systems Research</i>.</div></li>
-      <li class="pub"><time>May 2026</time><span class="emo"></span><div class="txt"><span class="kind">Paper</span>Paper accepted to <b>IEEE ITSC 2026</b>.</div></li>
+      <li class="hidden pub"><time>May 2026</time><span class="emo"></span><div class="txt"><span class="kind">Paper</span>Paper accepted to <b>IEEE ITSC 2026</b>.</div></li>
       <li class="hidden"><time>Mar 2026</time><span class="emo"></span><div class="txt"><span class="kind talk">Poster</span>Presented the poster “RGDR: Reward-Guided Domain Randomization for Autonomous Driving” at CEE Industry Leadership Night, Northeastern University.</div></li>
       <li class="hidden"><time>Mar 2026</time><span class="emo"></span><div class="txt"><span class="kind award">Award</span>Received a travel grant for <b>ACC 2026</b>, New Orleans, LA.</div></li>
       <li class="hidden"><time>Feb 2026</time><span class="emo"></span><div class="txt"><span class="kind life">Milestone</span>Passed the Ph.D. qualifying examination. I thank my committee members, <a href="https://ghoreishi.lab.northeastern.edu/">Prof. Fatemeh Ghoreishi</a>, <a href="https://www.khoury.northeastern.edu/people/chris-amato/">Prof. Christopher Amato</a>, and <a href="https://coe.northeastern.edu/people/dennedy-frank-james/">Prof. James Dennedy-Frank</a>, for their constructive feedback.</div></li>
@@ -532,7 +562,7 @@
   </section>
   </div>
 
-  <div class="band">
+  <div class="band band-research">
   <section id="research">
     <div class="sec-head"><div><p class="eyebrow">Publications</p><h2>Research</h2></div><span class="note">Publications since 2025 · complete list on <a href="https://scholar.google.com/citations?user=2vMnqO4AAAAJ&hl=en">Google Scholar</a></span></div>
     <div class="year">2026</div>
@@ -669,7 +699,7 @@
   </section>
   </div>
 
-  <div class="band">
+  <div class="band band-personal">
   <section id="personal">
     <div class="sec-head"><div><p class="eyebrow">Beyond research</p><h2>Personal Interests</h2></div></div>
     <div class="tabs" role="tablist">
@@ -726,16 +756,19 @@
   const root = document.documentElement;
   const COPY_ICON = '<svg class="s" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg>', CHECK_ICON = '<svg class="s" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>';
 
-  // Theme
-  const themeBtn = document.getElementById('themeBtn');
-  const dark = () => root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
-  const labelTheme = () => { const t = dark() ? 'Switch to light mode' : 'Switch to dark mode'; themeBtn.title = t; themeBtn.setAttribute('aria-label', t); };
+  // Eye-care mode (warm paper tones); the choice is remembered per browser
+  const themeBtn = document.getElementById('themeBtn'), themeMeta = document.querySelector('meta[name="theme-color"]');
+  const eye = () => root.dataset.theme === 'eye';
+  const labelTheme = () => {
+    const t = eye() ? 'Switch to normal mode' : 'Switch to eye-care mode';
+    themeBtn.title = t; themeBtn.setAttribute('aria-label', t);
+    if (themeMeta) themeMeta.content = eye() ? '#f2eadb' : '#fbfbf9';
+  };
   themeBtn.addEventListener('click', () => {
-    root.dataset.theme = dark() ? 'light' : 'dark';
-    try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+    if (eye()) delete root.dataset.theme; else root.dataset.theme = 'eye';
+    try { if (eye()) localStorage.setItem('theme', 'eye'); else localStorage.removeItem('theme'); } catch (e) {}
     labelTheme();
   });
-  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', labelTheme);
   labelTheme();
 
   // News
@@ -801,11 +834,16 @@
   const links = [...document.querySelectorAll('.nav a.l')];
   const secs = links.map(a => document.querySelector(a.getAttribute('href')));
   const row = document.querySelector('.nav-links'), toTop = document.getElementById('toTop');
-  let current = -2, ticking = false;
+  let current = -2, ticking = false, picked = -1;
   const spy = () => {
     ticking = false;
+    const tops = secs.map(s => s ? s.getBoundingClientRect().top : Infinity);
     let i = -1;
-    secs.forEach((s, k) => { if (s && s.getBoundingClientRect().top < 150) i = k; });
+    tops.forEach((t, k) => { if (t < 150) i = k; });
+    if (i >= 0) {   // sections side by side (Education | Honors): the one just clicked, otherwise the left one
+      const sameRow = tops.map((t, k) => k).filter(k => Math.abs(tops[k] - tops[i]) < 4);
+      i = sameRow.includes(picked) ? picked : sameRow[0];
+    }
     if (i !== current) {
       current = i;
       links.forEach((a, k) => a.classList.toggle('active', k === i));
@@ -817,8 +855,22 @@
     toTop.classList.toggle('show', scrollY > 700);
   };
   addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(spy); } }, { passive: true });
+  links.forEach((a, k) => a.addEventListener('click', () => { picked = k; requestAnimationFrame(spy); }));
   spy();
   toTop.addEventListener('click', () => scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // Gentle rise-in: items entering the screen together are staggered slightly
+  const revealEls = document.querySelectorAll('.sec-head, .interests li, .poster-col figure, .pubs .pub, .edu li, .pair-row .honors, .photos img');
+  if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const io = new IntersectionObserver(entries => {
+      entries.filter(e => e.isIntersecting)
+        .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top || a.boundingClientRect.left - b.boundingClientRect.left)
+        .forEach((e, i) => { e.target.style.setProperty('--d', Math.min(i * 0.07, 0.42) + 's'); e.target.classList.add('in'); io.unobserve(e.target); });
+    }, { rootMargin: '0px 0px -6% 0px', threshold: 0.06 });
+    revealEls.forEach(el => io.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('in'));
+  }
 
   // Footer dates follow the published file
   document.getElementById('year').textContent = new Date().getFullYear();
